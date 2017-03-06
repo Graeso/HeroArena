@@ -12,7 +12,9 @@ public class CameraScript : MonoBehaviour {
 
 	private Vector3 middlePoint;
 	private float distanceFromMiddlePoint;
-	private float distanceBetweenPlayers;
+	private float distanceBetweenPlayers12;
+	private float distanceBetweenPlayers34;
+	private float distanceBetweenPlayersTotal;
 	private float cameraDistance;
 	private float aspectRatio;
 	private float fov;
@@ -33,12 +35,13 @@ public class CameraScript : MonoBehaviour {
 		Camera.main.transform.position = newCameraPos;
 
 		// Find the middle point between players
-		Vector3 vectorBetweenPlayers = player2.position - player1.position;
-		middlePoint = player1.position + 0.5f * vectorBetweenPlayers;
+		Vector3 vectorBetweenPlayers12 = player2.position - player1.position;
+		Vector3 vectorBetweenPlayers34 = player3.position - player4.position;
+		middlePoint = vectorBetweenPlayers12 + 0.5f * vectorBetweenPlayers34;
 
 		// Calculate the new distance
-		distanceBetweenPlayers = vectorBetweenPlayers.magnitude;
-		cameraDistance = (distanceBetweenPlayers / 2.0f / aspectRatio) / tanFov;
+		distanceBetweenPlayersTotal = vectorBetweenPlayers12.magnitude / vectorBetweenPlayers34.magnitude;
+		cameraDistance = (distanceBetweenPlayersTotal / 2.0f / aspectRatio) / tanFov;
 
 		// Set camera to new position
 		Vector3 dir = (Camera.main.transform.position - middlePoint).normalized;
