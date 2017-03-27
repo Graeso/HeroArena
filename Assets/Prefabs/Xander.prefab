@@ -11,6 +11,21 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1552098773340820}
   m_IsPrefabParent: 1
+--- !u!1 &1011535113623632
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4413282463558848}
+  m_Layer: 8
+  m_Name: XanderBasicSpawn
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1015421858937958
 GameObject:
   m_ObjectHideFlags: 1
@@ -19,9 +34,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4628436600704494}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 Tail4
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34,9 +49,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4439896471684092}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 HeadNub
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49,9 +64,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4404551075415952}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 Pelvis
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64,9 +79,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4035700709255204}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 L Forearm
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79,9 +94,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4223564366406064}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 L HorseLink
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95,9 +110,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4125976747424960}
   - component: {fileID: 137879232830653984}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Middle Grenade (Top)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,9 +125,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4764138866090760}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 R Toe0Nub
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125,9 +140,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4614392881475768}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 R HorseLink
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -141,9 +156,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4652197116755840}
   - component: {fileID: 137566447574720478}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Landmine
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -156,9 +171,44 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4882436031294022}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Landmine Controller
-  m_TagString: Untagged
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1180308382508480
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224701533858033012}
+  - component: {fileID: 223366554867836268}
+  - component: {fileID: 114211086177876668}
+  - component: {fileID: 114397049146177842}
+  m_Layer: 5
+  m_Name: HealthBarCanvas
+  m_TagString: User Interface
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1181909301396644
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224579760792340744}
+  - component: {fileID: 222425236821557828}
+  - component: {fileID: 114327371707153938}
+  m_Layer: 5
+  m_Name: HealthBar
+  m_TagString: User Interface
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -171,9 +221,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4898966358782532}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 R UpperArm
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -186,9 +236,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4911164228460270}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 R Toe0
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -202,9 +252,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4418574899604276}
   - component: {fileID: 137433118366005590}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Backpack(Flap)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -218,9 +268,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4961810150241310}
   - component: {fileID: 137733603789450690}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Landmine Base
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -234,9 +284,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4132492514095276}
   - component: {fileID: 137785539375388388}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Left Grenade (Bottom)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -249,9 +299,26 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4610000472773292}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Civet Skeley
-  m_TagString: Untagged
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1291956448110574
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224164873227126768}
+  - component: {fileID: 222342090800258568}
+  - component: {fileID: 114085336416947410}
+  m_Layer: 5
+  m_Name: Name
+  m_TagString: User Interface
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -265,9 +332,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4486745664962152}
   - component: {fileID: 137710668997125334}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: XanderModel
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -280,9 +347,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4149613539475482}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 Spine2
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -295,9 +362,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4327389561206738}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 R Clavicle
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -310,9 +377,26 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4340051844826924}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 R Toe01
-  m_TagString: Untagged
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1336847103177780
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224360032243292728}
+  - component: {fileID: 222982201130871594}
+  - component: {fileID: 114538021749237720}
+  m_Layer: 5
+  m_Name: HealthBackground
+  m_TagString: User Interface
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -325,9 +409,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4541679582870824}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 L Toe0Nub
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -340,9 +424,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4619664489919704}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 R Finger0Nub
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -356,9 +440,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4005597451086760}
   - component: {fileID: 137825306715590246}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Right Grenade (Top)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -371,9 +455,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4249911233414338}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 L Finger0
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -386,9 +470,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4468799503769800}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 L Toe0
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -401,9 +485,28 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4749697298957548}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 Head
-  m_TagString: Untagged
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1434265275766988
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4239473500568984}
+  - component: {fileID: 20807567490683220}
+  - component: {fileID: 92591264285392990}
+  - component: {fileID: 124241761153082854}
+  - component: {fileID: 81193805103460606}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -417,9 +520,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4489463962929104}
   - component: {fileID: 137370982573596488}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Backpack
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -432,9 +535,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4244169604416434}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 L Foot
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -447,9 +550,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4087284025866056}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 Tail3
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -462,9 +565,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4069034962377248}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 L Clavicle
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -477,9 +580,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4285757966487686}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 Tail1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -492,9 +595,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4252049018282462}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 R Finger0
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -507,9 +610,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4789410417843398}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 R Forearm
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -522,9 +625,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4721924872969508}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 L UpperArm
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -538,11 +641,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4209721436760420}
   - component: {fileID: 143488978297284030}
-  - component: {fileID: 114681873476535528}
   - component: {fileID: 114606275188409226}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Xander
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -555,9 +657,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4978377167546562}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Backpack Controller
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -570,9 +672,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4927417186496304}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 Spine
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -585,9 +687,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4379244955346062}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 Spine3
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -600,9 +702,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4794031385650890}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 R Toe02
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -615,9 +717,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4635494666211750}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 TailNub
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -630,9 +732,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4163313915581546}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Middle Grenade Controller
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -645,9 +747,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4204217865919464}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 L Finger0Nub
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -660,9 +762,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4788298093345626}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 L Hand
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -675,9 +777,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4747049130072536}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 Tail5
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -691,9 +793,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4986208202024958}
   - component: {fileID: 137659927571293752}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Left Grenade (Top)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -706,9 +808,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4634643295347038}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 L Toe02
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -721,9 +823,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4495537029315972}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Left Grenade Controller
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -736,9 +838,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4261839398180784}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 Tail
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -751,9 +853,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4552159717161010}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 L Thigh
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -767,9 +869,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4161839539917510}
   - component: {fileID: 111924811181001562}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: XanderBody
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -782,9 +884,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4486470694614882}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 Footsteps
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -797,9 +899,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4946231325015688}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 Spine1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -812,9 +914,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4527543106881304}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 R Calf
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -827,9 +929,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4922012921361180}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 R Hand
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -843,9 +945,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4333127227258476}
   - component: {fileID: 137103447999870498}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 'Middle Grenade (Bottom) '
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -858,9 +960,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4163403413260760}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 Neck
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -874,9 +976,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4295143352383140}
   - component: {fileID: 137711779299727392}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Right Grenade (Bottom)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -889,9 +991,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4790675345306842}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 L Toe01
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -904,9 +1006,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4358510112143512}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 R Foot
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -919,9 +1021,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4399575438065446}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Right Grenade Controller
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -934,9 +1036,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4333536617766562}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 R Thigh
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -949,9 +1051,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4112010714996346}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 L Calf
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -964,9 +1066,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4192313130985684}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 Tail2
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1100,8 +1202,9 @@ Transform:
   - {fileID: 4125976747424960}
   - {fileID: 4005597451086760}
   - {fileID: 4486745664962152}
+  - {fileID: 4413282463558848}
   m_Father: {fileID: 4209721436760420}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4163313915581546
 Transform:
@@ -1167,10 +1270,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1552098773340820}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.4, y: 0.169, z: 0}
+  m_LocalPosition: {x: -2.4, y: 0.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 4239473500568984}
   - {fileID: 4161839539917510}
+  - {fileID: 224701533858033012}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1189,6 +1294,19 @@ Transform:
   m_Father: {fileID: 4112010714996346}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4239473500568984
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1434265275766988}
+  m_LocalRotation: {x: 0.38268322, y: -0, z: -0, w: 0.9238797}
+  m_LocalPosition: {x: 0, y: 5.061, z: -4.53}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4209721436760420}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 44.996002, y: 0, z: 0}
 --- !u!4 &4244169604416434
 Transform:
   m_ObjectHideFlags: 1
@@ -1388,6 +1506,19 @@ Transform:
   m_Father: {fileID: 4610000472773292}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4413282463558848
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1011535113623632}
+  m_LocalRotation: {x: -0.4027114, y: -0, z: -0, w: 0.9153271}
+  m_LocalPosition: {x: 0, y: 0.314, z: 0.253}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4161839539917510}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: -47.496002, y: 0, z: 0}
 --- !u!4 &4418574899604276
 Transform:
   m_ObjectHideFlags: 1
@@ -1858,6 +1989,54 @@ Transform:
   m_Father: {fileID: 4161839539917510}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &20807567490683220
+Camera:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1434265275766988}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.63235295, g: 0.63235295, b: 0.63235295, a: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+  m_StereoMirrorMode: 0
+--- !u!81 &81193805103460606
+AudioListener:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1434265275766988}
+  m_Enabled: 1
+--- !u!92 &92591264285392990
+Behaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1434265275766988}
+  m_Enabled: 1
 --- !u!111 &111924811181001562
 Animation:
   m_ObjectHideFlags: 1
@@ -1881,6 +2060,130 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 1
+--- !u!114 &114085336416947410
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1291956448110574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 100
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 100
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: Xander
+--- !u!114 &114211086177876668
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1180308382508480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!114 &114327371707153938
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1181909301396644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.034482718, g: 1, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!114 &114397049146177842
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1180308382508480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &114538021749237720
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1336847103177780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
 --- !u!114 &114606275188409226
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1892,6 +2195,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 553b7fdd090e0b8489be20274792eba5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 2.5
+  rotateChar: 12
+  playerAnim: {fileID: 111924811181001562}
+  playerBody: {fileID: 1730798909539142}
+  playerParent: {fileID: 1552098773340820}
+  canMove: 1
   maxHealth: 125
   maxStamina: 100
   xanderBasicDamage: 15
@@ -1906,24 +2215,14 @@ MonoBehaviour:
   xanderDigDistance: 25
   xanderDigCD: 8
   xanderDigSpeed: 8
---- !u!114 &114681873476535528
-MonoBehaviour:
+  basicSpawnPoint: {fileID: 1011535113623632}
+--- !u!124 &124241761153082854
+Behaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1552098773340820}
+  m_GameObject: {fileID: 1434265275766988}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62b3efaf50d47fa4cabf1c91003b1894, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2.5
-  rotateChar: 12
-  playerAnim: {fileID: 111924811181001562}
-  playerBody: {fileID: 1730798909539142}
-  playerParent: {fileID: 1552098773340820}
-  xanderBomb: {fileID: 1000010817879434, guid: d2e011794e2b09840af4baf937741ca2, type: 2}
-  canMove: 1
 --- !u!137 &137103447999870498
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -2461,3 +2760,115 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.32, z: 0.02}
+--- !u!222 &222342090800258568
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1291956448110574}
+--- !u!222 &222425236821557828
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1181909301396644}
+--- !u!222 &222982201130871594
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1336847103177780}
+--- !u!223 &223366554867836268
+Canvas:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1180308382508480}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_RenderMode: 2
+  m_Camera: {fileID: 20807567490683220}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &224164873227126768
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1291956448110574}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.002, y: 0.003, z: 0.003}
+  m_Children: []
+  m_Father: {fileID: 224701533858033012}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0.252}
+  m_SizeDelta: {x: 1, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224360032243292728
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1336847103177780}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224701533858033012}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0.5, y: 0.2}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224579760792340744
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1181909301396644}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224701533858033012}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0.45, y: 0.15}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224701533858033012
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1180308382508480}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 224360032243292728}
+  - {fileID: 224579760792340744}
+  - {fileID: 224164873227126768}
+  m_Father: {fileID: 4209721436760420}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 1}
+  m_SizeDelta: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0.5}
