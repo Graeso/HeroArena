@@ -78,43 +78,43 @@ public class XanderScript : MonoBehaviour {
 				if (basicCooling == false)
 					xanderBasic (xanderBasicDamage, xanderBasicCD, xanderBasicSpeed);
 			}
-		}
 
-		// Moving and rotating the character with the left stick
-		player = InputManager.ActiveDevice;
-		CharacterController Controller = GetComponent<CharacterController> ();
+			// Moving and rotating the character with the left stick
+			player = InputManager.ActiveDevice;
+			CharacterController Controller = GetComponent<CharacterController> ();
 
-		if (canMove) {
-			moveDirection = new Vector3 (player.LeftStickX, 0, player.LeftStickY);
-			moveDirection = transform.TransformDirection (moveDirection);
-			moveDirection *= speed;
+			if (canMove) {
+				moveDirection = new Vector3 (player.LeftStickX, 0, player.LeftStickY);
+				moveDirection = transform.TransformDirection (moveDirection);
+				moveDirection *= speed;
 
-			if (moveDirection != Vector3.zero && headDirection == Vector3.zero) {
+				if (moveDirection != Vector3.zero && headDirection == Vector3.zero) {
+					playerBody.transform.rotation = Quaternion.Slerp (
+						playerBody.transform.rotation,
+						Quaternion.LookRotation (moveDirection),
+						Time.deltaTime * rotateChar);
+				}
+			}
+
+			// Rotating the character with the right stick
+			headDirection = new Vector3 (player.RightStick.X, 0, player.RightStick.Y);
+			if (headDirection != Vector3.zero) {
+				playerBody.transform.parent = playerParent.transform;
 				playerBody.transform.rotation = Quaternion.Slerp (
 					playerBody.transform.rotation,
-					Quaternion.LookRotation (moveDirection),
+					Quaternion.LookRotation (headDirection),
 					Time.deltaTime * rotateChar);
 			}
-		}
 
-		// Rotating the character with the right stick
-		headDirection = new Vector3 (player.RightStick.X, 0, player.RightStick.Y);
-		if (headDirection != Vector3.zero) {
-			playerBody.transform.parent = playerParent.transform;
-			playerBody.transform.rotation = Quaternion.Slerp (
-				playerBody.transform.rotation,
-				Quaternion.LookRotation (headDirection),
-				Time.deltaTime * rotateChar);
-		}
+			Controller.Move (moveDirection * Time.deltaTime);
 
-		Controller.Move (moveDirection * Time.deltaTime);
-
-		// Playing animations
-		if (moveDirection == Vector3.zero) { 
-			playerAnim.Play ("Idle");
-		}
-		if (moveDirection != Vector3.zero) {
-			playerAnim.Play ("Run");
+			// Playing animations
+			if (moveDirection == Vector3.zero) { 
+				playerAnim.Play ("Idle");
+			}
+			if (moveDirection != Vector3.zero) {
+				playerAnim.Play ("Run");
+			}
 		}
 	}
 
