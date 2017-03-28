@@ -5,6 +5,7 @@ using UnityEngine;
 public class GrenadeScript : MonoBehaviour {
 
 	private float lifeTime = 5f;
+	HealthBarScript healthBarScript;
 
 	void Update () {
 		this.transform.Translate (0f, 0f, 5f * Time.deltaTime);
@@ -25,7 +26,8 @@ public class GrenadeScript : MonoBehaviour {
 		int i = 0;
 		while (i < hitColliders.Length) {
 			if (col.gameObject.tag == "Player") {
-				// Damage the object
+				healthBarScript = col.transform.FindChild ("HealthBarCanvas").GetComponent<HealthBarScript> ();
+				healthBarScript.GetHit (15f);
 			}
 			i++;
 		}

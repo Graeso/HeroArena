@@ -189,6 +189,7 @@ GameObject:
   - component: {fileID: 223366554867836268}
   - component: {fileID: 114211086177876668}
   - component: {fileID: 114397049146177842}
+  - component: {fileID: 114625797268698398}
   m_Layer: 5
   m_Name: HealthBarCanvas
   m_TagString: User Interface
@@ -2216,6 +2217,18 @@ MonoBehaviour:
   xanderDigCD: 8
   xanderDigSpeed: 8
   basicSpawnPoint: {fileID: 1011535113623632}
+--- !u!114 &114625797268698398
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1180308382508480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00550f74f4e14fd4fb2c3dfec8f904f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curHealth: 0
 --- !u!124 &124241761153082854
 Behaviour:
   m_ObjectHideFlags: 1
@@ -2846,11 +2859,11 @@ RectTransform:
   m_Father: {fileID: 224701533858033012}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 0.025000095, y: 0}
   m_SizeDelta: {x: 0.45, y: 0.15}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!224 &224701533858033012
 RectTransform:
   m_ObjectHideFlags: 1

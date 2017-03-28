@@ -163,6 +163,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4518518155991638}
   - component: {fileID: 143962951276143710}
+  - component: {fileID: 114190812841120734}
   m_Layer: 0
   m_Name: Shera
   m_TagString: Untagged
@@ -712,6 +713,7 @@ GameObject:
   - component: {fileID: 223761927455884012}
   - component: {fileID: 114256335150052808}
   - component: {fileID: 114563862741713182}
+  - component: {fileID: 114722487249113426}
   m_Layer: 5
   m_Name: HealthBarCanvas
   m_TagString: User Interface
@@ -1441,6 +1443,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114190812841120734
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1294236069526038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3df4d36229130674b9a652ef787e825d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 175
 --- !u!114 &114247687229270974
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1501,7 +1515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.034482718, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1532,6 +1546,17 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &114722487249113426
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1987402981613758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00550f74f4e14fd4fb2c3dfec8f904f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114826977103897202
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1704,11 +1729,11 @@ RectTransform:
   m_Father: {fileID: 224425454362857254}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 0.024999976, y: 0}
   m_SizeDelta: {x: 0.45, y: 0.15}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!224 &224425454362857254
 RectTransform:
   m_ObjectHideFlags: 1
