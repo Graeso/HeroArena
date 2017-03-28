@@ -9,8 +9,8 @@ public class XanderScript : MonoBehaviour {
 
 	#region Variables
 	[Header ("Adjustable Variables")]
-	public float speed = 0f;
-	public float rotateChar = 0f;
+	[Range (0, 10)] public float speed = 0f;
+	private float rotateChar = 12f;
 
 	[Header ("Settable Variables")]
 	public Animation playerAnim;
@@ -30,34 +30,26 @@ public class XanderScript : MonoBehaviour {
 	private float curStamina;
 
 	[Header ("Xander Basic Attack Variables")]
-	[Range (0, 100)]
-	public float xanderBasicDamage;
-	[Range (0, 10)]
-	public float xanderBasicCD;
+	[Range (0, 100)] public float xanderBasicDamage;
+	[Range (0, 10)] public float xanderBasicCD;
 	public float xanderBasicSpeed = .5f;
 	private bool basicCooling;
 
 	[Header ("Xander Mine Variables")]
-	[Range (0, 100)]
-	public float xanderMineDamage;
-	[Range (0, 10)]
-	public float xanderMineCD;
+	[Range (0, 100)] public float xanderMineDamage;
+	[Range (0, 10)] public float xanderMineCD;
 	public float xanderMineSpeed;
 	private bool mineCooling;
 
 	[Header ("Xander Ultimate Variables")]
-	[Range (0, 250)]
-	public float xanderUltDamage;
-	[Range (0, 120)]
-	public float xanderUltCD;
+	[Range (0, 250)] public float xanderUltDamage;
+	[Range (0, 120)] public float xanderUltCD;
 	public float xanderUltSpeed;
 	private bool ultCooling;
 
 	[Header ("Xander Dig Variables")]
-	[Range (0, 100)]
-	public float xanderDigDistance;
-	[Range (0, 10)]
-	public float xanderDigCD;
+	[Range (0, 100)] public float xanderDigDistance;
+	[Range (0, 10)] public float xanderDigCD;
 	public float xanderDigSpeed;
 	private bool digCooling;
 
