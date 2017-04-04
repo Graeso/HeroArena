@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SheraScript : MonoBehaviour {
-
-	public float maxHealth = 175f;
+public class MineScript : MonoBehaviour {
 
 }

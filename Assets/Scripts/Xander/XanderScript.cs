@@ -4,8 +4,9 @@ using UnityEngine;
 using InControl;
 
 public class XanderScript : MonoBehaviour {
+	public static XanderScript S;
 
-	public InputDevice player;
+	public InputDevice Device { get; set; }
 
 	#region Variables
 	[Header ("Adjustable Variables")]
@@ -57,14 +58,16 @@ public class XanderScript : MonoBehaviour {
 	public GameObject basicSpawnPoint;
 	#endregion
 
+	void Awake () {
+		S = this;
+	}
+
 	void Start () {
-		playerBody = GameObject.Find ("XanderBody");
-		playerParent = GameObject.Find ("Xander");
 	}
 
 	void Update () {
 
-		if (player != null) {
+		if (Device != null) {
 			if (basicCooling) {
 				xanderBasicCD -= Time.deltaTime;
 
@@ -74,17 +77,17 @@ public class XanderScript : MonoBehaviour {
 				}
 			}
 
-			if (player.RightTrigger.WasPressed) {
+			if (Device.RightTrigger.WasPressed) {
 				if (basicCooling == false)
-					xanderBasic (xanderBasicDamage, xanderBasicCD, xanderBasicSpeed);
+					xanderBasic (playerBody);
 			}
 
-			// Moving and rotating the character with the left stick
-			player = InputManager.ActiveDevice;
-			CharacterController Controller = GetComponent<CharacterController> ();
-
 			if (canMove) {
-				moveDirection = new Vector3 (player.LeftStickX, 0, player.LeftStickY);
+				// Moving and rotating the character with the left stick
+				//Device = InputManager.ActiveDevice;
+				CharacterController Controller = GetComponent<CharacterController> ();
+
+				moveDirection = new Vector3 (Device.LeftStickX, 0, Device.LeftStickY);
 				moveDirection = transform.TransformDirection (moveDirection);
 				moveDirection *= speed;
 
@@ -94,19 +97,19 @@ public class XanderScript : MonoBehaviour {
 						Quaternion.LookRotation (moveDirection),
 						Time.deltaTime * rotateChar);
 				}
-			}
 
-			// Rotating the character with the right stick
-			headDirection = new Vector3 (player.RightStick.X, 0, player.RightStick.Y);
-			if (headDirection != Vector3.zero) {
-				playerBody.transform.parent = playerParent.transform;
-				playerBody.transform.rotation = Quaternion.Slerp (
-					playerBody.transform.rotation,
-					Quaternion.LookRotation (headDirection),
-					Time.deltaTime * rotateChar);
-			}
+				// Rotating the character with the right stick
+				headDirection = new Vector3 (Device.RightStick.X, 0, Device.RightStick.Y);
+				if (headDirection != Vector3.zero) {
+					playerBody.transform.parent = playerParent.transform;
+					playerBody.transform.rotation = Quaternion.Slerp (
+						playerBody.transform.rotation,
+						Quaternion.LookRotation (headDirection),
+						Time.deltaTime * rotateChar);
+				}
 
-			Controller.Move (moveDirection * Time.deltaTime);
+				Controller.Move (moveDirection * Time.deltaTime);
+			}
 
 			// Playing animations
 			if (moveDirection == Vector3.zero) { 
@@ -118,16 +121,16 @@ public class XanderScript : MonoBehaviour {
 		}
 	}
 
-	public void xanderBasic (float basicDamage, float basicCD, float basicSpeed) {
+	public void xanderBasic (GameObject thisPlayer) {
 		basicCooling = true;
 		// this.GetComponent<AudioSource> ().Play ();
 		GameObject creation;
 		creation = Instantiate (Resources.Load ("XanderGrenade"), basicSpawnPoint.transform.position, basicSpawnPoint.transform.rotation) as GameObject;
-		creation.transform.eulerAngles = new Vector3 (creation.transform.eulerAngles.x + Random.Range (-4f, 4f), creation.transform.eulerAngles.y + Random.Range (-4f, 4f), creation.transform.eulerAngles.x);
+		creation.transform.eulerAngles = new Vector3 (creation.transform.eulerAngles.x, creation.transform.eulerAngles.y - 2, creation.transform.eulerAngles.x);
 		creation = Instantiate (Resources.Load ("XanderGrenade"), basicSpawnPoint.transform.position, basicSpawnPoint.transform.rotation) as GameObject;
-		creation.transform.eulerAngles = new Vector3 (creation.transform.eulerAngles.x + Random.Range (-4f, 4f), creation.transform.eulerAngles.y + Random.Range (-4f, 4f), creation.transform.eulerAngles.x);
+		creation.transform.eulerAngles = new Vector3 (creation.transform.eulerAngles.x, creation.transform.eulerAngles.y, creation.transform.eulerAngles.x);
 		creation = Instantiate (Resources.Load ("XanderGrenade"), basicSpawnPoint.transform.position, basicSpawnPoint.transform.rotation) as GameObject;
-		creation.transform.eulerAngles = new Vector3 (creation.transform.eulerAngles.x + Random.Range (-4f, 4f), creation.transform.eulerAngles.y + Random.Range (-4f, 4f), creation.transform.eulerAngles.x);
+		creation.transform.eulerAngles = new Vector3 (creation.transform.eulerAngles.x, creation.transform.eulerAngles.y + 2, creation.transform.eulerAngles.x);
 	}
 
 	public void xanderMine (float mineDamage, float mineCD, float mineSpeed) {
@@ -141,5 +144,4 @@ public class XanderScript : MonoBehaviour {
 	public void xanderDig (float digDistance, float digCD, float digSpeed) {
 		
 	}
-
 }
