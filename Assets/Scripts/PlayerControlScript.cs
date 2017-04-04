@@ -67,8 +67,7 @@ public class PlayerControlScript : MonoBehaviour {
 		if (players.Count < maxPlayers) {
 			var playerPosition = playerPositions[0];
 			playerPositions.RemoveAt( 0 );
-
-			var gameObject = (GameObject) Instantiate( playerPrefab, playerPosition, Quaternion.identity );
+			var gameObject = (GameObject) Instantiate( playerPrefab, playerPosition, Quaternion.identity);
 			var player = gameObject.GetComponent<PlayerControlScript>();
 			XanderScript.S.Device = inputDevice;
 			players.Add (player);

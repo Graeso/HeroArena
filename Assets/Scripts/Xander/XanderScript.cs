@@ -77,9 +77,10 @@ public class XanderScript : MonoBehaviour {
 				}
 			}
 
-			if (Device.RightTrigger.WasPressed) {
+			if (Device.RightBumper.IsPressed) {
 				if (basicCooling == false)
 					xanderBasic (playerBody);
+					//playerAnim.Play ("Attack");
 			}
 
 			if (canMove) {
@@ -123,7 +124,6 @@ public class XanderScript : MonoBehaviour {
 
 	public void xanderBasic (GameObject thisPlayer) {
 		basicCooling = true;
-		// this.GetComponent<AudioSource> ().Play ();
 		GameObject creation;
 		creation = Instantiate (Resources.Load ("XanderGrenade"), basicSpawnPoint.transform.position, basicSpawnPoint.transform.rotation) as GameObject;
 		creation.transform.eulerAngles = new Vector3 (creation.transform.eulerAngles.x, creation.transform.eulerAngles.y - 2, creation.transform.eulerAngles.x);
