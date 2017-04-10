@@ -24,7 +24,7 @@ public class HealthBarScript : MonoBehaviour {
 			xanderScript = thisParent.GetComponent<XanderScript> ();
 			maxHealth = xanderScript.maxHealth;
 		}
-		if (thisParent.name == "Shera") {
+		else if (thisParent.name == "Shera") {
 			sheraScript = thisParent.GetComponent<SheraScript> ();
 			maxHealth = sheraScript.maxHealth;
 		} else {
