@@ -3,7 +3,8 @@ using System.Collections;
 
 public class CameraScript : MonoBehaviour {
 
-	public Transform player1;
+	public GameObject player1;
+	//public Transform player1;
 	public Transform player2;
 	public Transform player3;
 	public Transform player4;
@@ -21,14 +22,20 @@ public class CameraScript : MonoBehaviour {
 	private float tanFov;
 
 	void Start() {
+		/*
 		// Find aspect ratio of screen
 		aspectRatio = Screen.width / Screen.height;
 		tanFov = Mathf.Tan (Mathf.Deg2Rad * Camera.main.fieldOfView / 2.0f);
 
 		// Find each player in the game;
+		*/
 	}
 
 	void Update () {
+		player1 = GameObject.Find ("Xander");
+		this.transform.parent = player1.transform;
+
+		/*
 		// Position the camera in the center
 		Vector3 newCameraPos = Camera.main.transform.position;
 		newCameraPos.x = middlePoint.x;
@@ -46,6 +53,7 @@ public class CameraScript : MonoBehaviour {
 		// Set camera to new position
 		Vector3 dir = (Camera.main.transform.position - middlePoint).normalized;
 		Camera.main.transform.position = middlePoint + dir * (cameraDistance + DISTANCE_MARGIN);
+		*/
 	}
 
 }

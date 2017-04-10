@@ -4,11 +4,19 @@ using UnityEngine;
 
 public class GrenadeScript : MonoBehaviour {
 
+	HealthBarScript healthBarScript; 
 	private float lifeTime = 5f;
-	HealthBarScript healthBarScript;
+	private Rigidbody rb;
+	[Range (0, 100)] public float thrust = 50f;
+	public GameObject originalXander;
+	public GameObject teammate;
+
+	void Start () {
+		rb = GetComponent<Rigidbody> ();
+		rb.AddForce (transform.forward * thrust);
+	}
 
 	void Update () {
-		this.transform.Translate (0f, 0f, 5f * Time.deltaTime);
 		lifeTime -= Time.deltaTime;
 
 		if (lifeTime <= 0f) {
@@ -31,5 +39,9 @@ public class GrenadeScript : MonoBehaviour {
 			}
 			i++;
 		}
+	}
+
+	void AssignXander () {
+		
 	}
 }
