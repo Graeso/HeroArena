@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using InControl;
 
-public class SheraScript : MonoBehaviour {
-	public static SheraScript S;
+public class CroakScript : MonoBehaviour {
+	public static CroakScript S;
 
 	public InputDevice Device { get; set; }
 
@@ -24,16 +24,16 @@ public class SheraScript : MonoBehaviour {
 	private Vector3 moveDirection = Vector3.zero;
 	private Vector3 headDirection = Vector3.zero;
 
-	[Header ("Shera Statistics")]
+	[Header ("Croak Statistics")]
 	public float maxHealth;
 	public float maxStamina;
 	private float curHealth;
 	private float curStamina;
 
-	[Header ("Shera Basic Attack Variables")]
-	[Range (0, 100)] public float sheraBasicDamage;
-	[Range (0, 10)] public float sheraBasicCD;
-	public float sheraBasicSpeed = .5f;
+	[Header ("Croak Basic Attack Variables")]
+	[Range (0, 100)] public float croakBasicDamage;
+	[Range (0, 10)] public float croakBasicCD;
+	public float croakBasicSpeed = .5f;
 	private bool basicCooling;
 	#endregion
 
@@ -45,18 +45,18 @@ public class SheraScript : MonoBehaviour {
 
 		if (Device != null) {
 			if (basicCooling) {
-				sheraBasicCD -= Time.deltaTime;
+				croakBasicCD -= Time.deltaTime;
 
-				if (sheraBasicCD <= 0f) {
+				if (croakBasicCD <= 0f) {
 					basicCooling = false;
-					sheraBasicCD = sheraBasicSpeed;
+					croakBasicCD = croakBasicSpeed;
 				}
 			}
 
 			if (Device.RightBumper.IsPressed) {
 				if (basicCooling == false)
-					sheraBasic (playerBody);
-				playerAnim.Play ("Attack");
+					croakBasic (playerBody);
+				playerAnim.Play ("Attack V1");
 			}
 
 			if (canMove) {
@@ -97,8 +97,9 @@ public class SheraScript : MonoBehaviour {
 		}
 	}
 
-	public void sheraBasic (GameObject thisPlayer) {
+	public void croakBasic (GameObject thisPlayer) {
 		basicCooling = true;
+		//GameObject creation;
 	}
 
 }

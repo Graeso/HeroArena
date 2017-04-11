@@ -195,6 +195,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73b5b5a6e8eeca941b89f9943a973071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thrust: 30
+  originalXander: {fileID: 0}
+  teammate: {fileID: 0}
 --- !u!135 &135270527444643158
 SphereCollider:
   m_ObjectHideFlags: 1

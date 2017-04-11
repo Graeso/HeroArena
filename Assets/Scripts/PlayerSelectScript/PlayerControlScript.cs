@@ -6,6 +6,8 @@ using InControl;
 public class PlayerControlScript : MonoBehaviour {
 	public GameObject xanderPrefab;
 	public GameObject sheraPrefab;
+	public GameObject jeremiahPrefab;
+	public GameObject croakPrefab;
 
 	const int maxPlayers = 4;
 
@@ -44,13 +46,13 @@ public class PlayerControlScript : MonoBehaviour {
 
 		if (XButtonWasPressedOnDevice (inputDevice)) {
 			if (ThereIsNoPlayerUsingDevice (inputDevice)) {
-				//CreatePlayer (inputDevice);
+				CreateJeremiah (inputDevice);
 			}
 		}
 
 		if (YButtonWasPressedOnDevice (inputDevice)) {
 			if (ThereIsNoPlayerUsingDevice (inputDevice)) {
-				//CreatePlayer (inputDevice);
+				CreateCroak (inputDevice);
 			}
 		}
 	}
@@ -116,6 +118,36 @@ public class PlayerControlScript : MonoBehaviour {
 			var gameObject = (GameObject) Instantiate( sheraPrefab, playerPosition, Quaternion.identity);
 			var player = gameObject.GetComponent<PlayerControlScript>();
 			SheraScript.S.Device = inputDevice;
+			players.Add (player);
+
+			return player;
+		}
+
+		return null;
+	}
+
+	PlayerControlScript CreateJeremiah (InputDevice inputDevice) {
+		if (players.Count < maxPlayers) {
+			var playerPosition = playerPositions[0];
+			playerPositions.RemoveAt( 0 );
+			var gameObject = (GameObject) Instantiate( jeremiahPrefab, playerPosition, Quaternion.identity);
+			var player = gameObject.GetComponent<PlayerControlScript>();
+			JeremiahScript.S.Device = inputDevice;
+			players.Add (player);
+
+			return player;
+		}
+
+		return null;
+	}
+
+	PlayerControlScript CreateCroak (InputDevice inputDevice) {
+		if (players.Count < maxPlayers) {
+			var playerPosition = playerPositions[0];
+			playerPositions.RemoveAt( 0 );
+			var gameObject = (GameObject) Instantiate( croakPrefab, playerPosition, Quaternion.identity);
+			var player = gameObject.GetComponent<PlayerControlScript>();
+			CroakScript.S.Device = inputDevice;
 			players.Add (player);
 
 			return player;

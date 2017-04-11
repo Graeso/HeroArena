@@ -25,19 +25,14 @@ public class GrenadeScript : MonoBehaviour {
 	}
 
 	void OnCollisionEnter (Collision col) {
-		Explosion (Vector3.zero, 25, col);
+		Explosion (col);
 		Destroy (this.gameObject);
 	}
 
-	void Explosion (Vector3 center, float radius, Collision col) {
-		Collider[] hitColliders = Physics.OverlapSphere (center, radius);
-		int i = 0;
-		while (i < hitColliders.Length) {
-			if (hitColliders [i].gameObject.tag == "Player") {
-				healthBarScript = col.transform.FindChild ("HealthBarCanvas").GetComponent<HealthBarScript> ();
-				healthBarScript.GetHit (15f);
-			}
-			i++;
+	void Explosion (Collision col) {
+		if (col.gameObject.tag == "Player") {
+			healthBarScript = col.transform.FindChild ("HealthBarCanvas").GetComponent<HealthBarScript> ();
+			healthBarScript.GetHit (5f);
 		}
 	}
 }

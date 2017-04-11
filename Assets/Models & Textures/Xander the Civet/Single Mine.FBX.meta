@@ -1,17 +1,22 @@
 fileFormatVersion: 2
-guid: 18f6ed4650a0060488af2fe67351396b
-timeCreated: 1491861679
-licenseType: Free
+guid: 036b1b3e58ee35c4cbd954708407cd7f
+timeCreated: 1491926526
+licenseType: Pro
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: Group21326
+    100000: Group18951
     100002: //RootNode
-    400000: Group21326
+    400000: Group18951
     400002: //RootNode
-    2300000: Group21326
-    3300000: Group21326
-    4300000: Group21326
+    2300000: Group18951
+    2300002: //RootNode
+    3300000: Group18951
+    3300002: //RootNode
+    4300000: Group19031
+    4300002: Group18951
+    9500000: //RootNode
+    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -36,7 +41,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 5
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -74,7 +79,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 1
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

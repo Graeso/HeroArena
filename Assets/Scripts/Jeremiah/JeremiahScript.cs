@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using InControl;
 
-public class SheraScript : MonoBehaviour {
-	public static SheraScript S;
+public class JeremiahScript : MonoBehaviour {
+	public static JeremiahScript S;
 
 	public InputDevice Device { get; set; }
 
@@ -24,16 +24,16 @@ public class SheraScript : MonoBehaviour {
 	private Vector3 moveDirection = Vector3.zero;
 	private Vector3 headDirection = Vector3.zero;
 
-	[Header ("Shera Statistics")]
+	[Header ("Jeremiah Statistics")]
 	public float maxHealth;
 	public float maxStamina;
 	private float curHealth;
 	private float curStamina;
 
-	[Header ("Shera Basic Attack Variables")]
-	[Range (0, 100)] public float sheraBasicDamage;
-	[Range (0, 10)] public float sheraBasicCD;
-	public float sheraBasicSpeed = .5f;
+	[Header ("Jeremiah Basic Attack Variables")]
+	[Range (0, 100)] public float jeremiahBasicDamage;
+	[Range (0, 10)] public float jeremiahBasicCD;
+	public float jeremiahBasicSpeed = .5f;
 	private bool basicCooling;
 	#endregion
 
@@ -45,18 +45,18 @@ public class SheraScript : MonoBehaviour {
 
 		if (Device != null) {
 			if (basicCooling) {
-				sheraBasicCD -= Time.deltaTime;
+				jeremiahBasicCD -= Time.deltaTime;
 
-				if (sheraBasicCD <= 0f) {
+				if (jeremiahBasicCD <= 0f) {
 					basicCooling = false;
-					sheraBasicCD = sheraBasicSpeed;
+					jeremiahBasicCD = jeremiahBasicSpeed;
 				}
 			}
 
 			if (Device.RightBumper.IsPressed) {
 				if (basicCooling == false)
-					sheraBasic (playerBody);
-				playerAnim.Play ("Attack");
+					jeremiahBasic (playerBody);
+				playerAnim.Play ("Attack V1");
 			}
 
 			if (canMove) {
@@ -89,7 +89,7 @@ public class SheraScript : MonoBehaviour {
 
 			// Playing animations
 			if (moveDirection == Vector3.zero) { 
-				playerAnim.Play ("Nothing Idle");
+				playerAnim.Play ("Move Idle");
 			}
 			if (moveDirection != Vector3.zero) {
 				playerAnim.Play ("Run");
@@ -97,8 +97,9 @@ public class SheraScript : MonoBehaviour {
 		}
 	}
 
-	public void sheraBasic (GameObject thisPlayer) {
+	public void jeremiahBasic (GameObject thisPlayer) {
 		basicCooling = true;
+		//GameObject creation;
 	}
 
 }

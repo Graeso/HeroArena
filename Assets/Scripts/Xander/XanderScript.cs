@@ -42,11 +42,13 @@ public class XanderScript : MonoBehaviour {
 	public float xanderMineSpeed;
 	private bool mineCooling;
 
+	/*
 	[Header ("Xander Ultimate Variables")]
 	[Range (0, 250)] public float xanderUltDamage;
 	[Range (0, 120)] public float xanderUltCD;
 	public float xanderUltSpeed;
 	private bool ultCooling;
+	*/
 
 	[Header ("Xander Dig Variables")]
 	[Range (0, 100)] public float xanderDigDistance;
@@ -80,12 +82,11 @@ public class XanderScript : MonoBehaviour {
 			if (Device.RightBumper.IsPressed) {
 				if (basicCooling == false)
 					xanderBasic (playerBody);
-					//playerAnim.Play ("Attack");
+				playerAnim.Play ("Attack");
 			}
 
 			if (canMove) {
 				// Moving and rotating the character with the left stick
-				//Device = InputManager.ActiveDevice;
 				CharacterController Controller = GetComponent<CharacterController> ();
 
 				moveDirection = new Vector3 (Device.LeftStickX, 0, Device.LeftStickY);
