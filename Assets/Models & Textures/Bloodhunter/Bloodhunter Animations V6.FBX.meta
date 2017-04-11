@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: cb340e8626eefaa49afdb4313f701a56
-timeCreated: 1490104771
+guid: 5bf5ff04f4147a94cb3979e17ac65d6b
+timeCreated: 1491314176
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -80,16 +80,17 @@ ModelImporter:
     7400002: Move Idle
     7400004: Character Select Idle
     7400006: Character Selected Idle
-    7400008: Nothing Idle
-    7400010: Attack 1
+    7400008: Attack V1
+    7400010: Nothing Idle
     7400012: Ability 1
-    7400014: Attack 2
+    7400014: Attack V2
     7400016: Ability 2
     7400018: Strafe Left
     7400020: Strafe Right
     7400022: Backpedal
     7400024: Death
     9500000: //RootNode
+    11100000: //RootNode
     13700000: Croger
   materials:
     importMaterials: 1
@@ -573,10 +574,10 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Nothing Idle
+      name: Attack V1
       takeName: Take 001
-      firstFrame: 510
-      lastFrame: 570
+      firstFrame: 580
+      lastFrame: 600
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -688,10 +689,10 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Attack 1
+      name: Nothing Idle
       takeName: Take 001
-      firstFrame: 580
-      lastFrame: 600
+      firstFrame: 510
+      lastFrame: 570
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -918,7 +919,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Attack 2
+      name: Attack V2
       takeName: Take 001
       firstFrame: 650
       lastFrame: 695
@@ -1496,7 +1497,7 @@ ModelImporter:
       name: Death
       takeName: Take 001
       firstFrame: 870
-      lastFrame: 930
+      lastFrame: 925
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -1645,10 +1646,10 @@ ModelImporter:
     rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 1
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
