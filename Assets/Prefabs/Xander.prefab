@@ -196,6 +196,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1164616439767294
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4735483790631254}
+  m_Layer: 8
+  m_Name: XanderMineSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1218497085962480
 GameObject:
   m_ObjectHideFlags: 1
@@ -1403,6 +1418,7 @@ Transform:
   - {fileID: 4757326098924360}
   - {fileID: 4866483296746880}
   - {fileID: 4444338817318774}
+  - {fileID: 4735483790631254}
   m_Father: {fileID: 4591776738989488}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1676,15 +1692,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1983741191414166}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.28, y: 0.15, z: -3.63}
+  m_LocalRotation: {x: -0, y: 0.15994228, z: -0, w: 0.98712635}
+  m_LocalPosition: {x: -3.2697449, y: 0.15000004, z: -7.954035}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4313582318009372}
   - {fileID: 224856225319281656}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 18.407001, z: 0}
 --- !u!4 &4631164588503162
 Transform:
   m_ObjectHideFlags: 1
@@ -1821,6 +1837,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4830547636790526}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4735483790631254
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1164616439767294}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.11573111, y: -0.021640167, z: 0.43425655}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4313582318009372}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4757326098924360
 Transform:
@@ -2050,6 +2079,7 @@ MonoBehaviour:
   xanderDigCD: 8
   xanderDigSpeed: 8
   basicSpawnPoint: {fileID: 1307683687544014}
+  mineSpawnPoint: {fileID: 1164616439767294}
 --- !u!114 &114403979300573652
 MonoBehaviour:
   m_ObjectHideFlags: 1

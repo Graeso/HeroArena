@@ -8,8 +8,8 @@ public class GrenadeScript : MonoBehaviour {
 	private float lifeTime = 3f;
 	private Rigidbody rb;
 	[Range (0, 100)] public float thrust = 50f;
-	public GameObject originalXander;
-	public GameObject teammate;
+	[HideInInspector] public GameObject originalXander;
+	[HideInInspector] public GameObject teammate;
 
 	void Start () {
 		rb = GetComponent<Rigidbody> ();

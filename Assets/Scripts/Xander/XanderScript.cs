@@ -58,6 +58,7 @@ public class XanderScript : MonoBehaviour {
 
 	[Header ("Xander Various")]
 	public GameObject basicSpawnPoint;
+	public GameObject mineSpawnPoint;
 	#endregion
 
 	void Awake () {
@@ -70,6 +71,8 @@ public class XanderScript : MonoBehaviour {
 	void Update () {
 
 		if (Device != null) {
+
+			#region *** XANDER BASIC ATTACK ***
 			if (basicCooling) {
 				xanderBasicCD -= Time.deltaTime;
 
@@ -84,6 +87,24 @@ public class XanderScript : MonoBehaviour {
 					xanderBasic (playerBody);
 				playerAnim.Play ("Attack");
 			}
+			#endregion
+
+			#region *** XANDER MINE ATTACK ***
+			if (mineCooling) {
+				xanderMineCD -= Time.deltaTime;
+
+				if (xanderMineCD <= 0f) {
+					mineCooling = false;
+					xanderMineCD = xanderMineSpeed;
+				}
+			}
+
+			if (Device.LeftBumper.IsPressed) {
+				if (mineCooling == false)
+					xanderMine (playerBody);
+				playerAnim.Play ("Ability 1");
+			}
+			#endregion
 
 			if (canMove) {
 				// Moving and rotating the character with the left stick
@@ -134,8 +155,13 @@ public class XanderScript : MonoBehaviour {
 		creation.transform.eulerAngles = new Vector3 (creation.transform.eulerAngles.x, creation.transform.eulerAngles.y + 2, creation.transform.eulerAngles.x);
 	}
 
-	public void xanderMine (float mineDamage, float mineCD, float mineSpeed) {
-		
+	public void xanderMine (GameObject thisPlayer) {
+		mineCooling = true;
+		canMove = false;
+		GameObject creation;
+		creation = Instantiate (Resources.Load ("XanderMine"), mineSpawnPoint.transform.position, mineSpawnPoint.transform.rotation) as GameObject;
+		playerAnim.Play ("Ability 1");
+		canMove = true;
 	}
 
 	public void xanderUlt (float ultDamage, float ultCD, float ultSpeed) {

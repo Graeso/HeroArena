@@ -92,7 +92,7 @@ public class CroakScript : MonoBehaviour {
 				playerAnim.Play ("Nothing Idle");
 			}
 			if (moveDirection != Vector3.zero) {
-				playerAnim.Play ("Run");
+				playerAnim.Play ("Run ");
 			}
 		}
 	}

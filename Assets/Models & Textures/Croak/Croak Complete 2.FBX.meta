@@ -1,0 +1,2353 @@
+fileFormatVersion: 2
+guid: ac6e78703b9093f4bab1da153e61f11c
+timeCreated: 1492025563
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Gator
+    100004: Head/Neck Control
+    100006: Hip Control
+    100008: IK Chain001
+    100010: IK Chain002
+    100012: Jaw Bottom
+    100014: Jaw Control
+    100016: Left  Shoulder Controller
+    100018: Left Arm
+    100020: Left Arm Controller
+    100022: Left CLavicle
+    100024: Left Foot
+    100026: Left Foot Controller
+    100028: Left Knee
+    100030: Left Shoulder
+    100032: Left Thigh
+    100034: Left Toe
+    100036: Left Toe Nub
+    100038: Left Wrist
+    100040: Left Wrist Controller
+    100042: Lower Jaw
+    100044: Lower Spine
+    100046: Lower Tail
+    100048: Mid Spine
+    100050: Middle Tail
+    100052: Neck
+    100054: Neck Fix
+    100056: Pelvis
+    100058: Pelvis Nub
+    100060: Right Arm
+    100062: Right Arm Controller
+    100064: Right Clavicle
+    100066: Right Foot
+    100068: Right Foot Controller
+    100070: Right Knee
+    100072: Right Shoulder
+    100074: Right Shoulder Controller
+    100076: Right Thigh
+    100078: Right Toe
+    100080: Right Toe Nub
+    100082: Right Wrist
+    100084: Right Wrist Controller
+    100086: Spine Base
+    100088: Tail
+    100090: Tail Controller
+    100092: Tail Controller 2
+    100094: Tail Controller 3
+    100096: Tail Controller 4
+    100098: Tail end
+    100100: Top Jaw
+    100102: Upper Body Control
+    100104: Upper Jaw
+    100106: Upper Spine
+    100108: Upper tail
+    100110: Waist Swivel
+    100112: Whole Rig
+    400000: //RootNode
+    400002: Gator
+    400004: Head/Neck Control
+    400006: Hip Control
+    400008: IK Chain001
+    400010: IK Chain002
+    400012: Jaw Bottom
+    400014: Jaw Control
+    400016: Left  Shoulder Controller
+    400018: Left Arm
+    400020: Left Arm Controller
+    400022: Left CLavicle
+    400024: Left Foot
+    400026: Left Foot Controller
+    400028: Left Knee
+    400030: Left Shoulder
+    400032: Left Thigh
+    400034: Left Toe
+    400036: Left Toe Nub
+    400038: Left Wrist
+    400040: Left Wrist Controller
+    400042: Lower Jaw
+    400044: Lower Spine
+    400046: Lower Tail
+    400048: Mid Spine
+    400050: Middle Tail
+    400052: Neck
+    400054: Neck Fix
+    400056: Pelvis
+    400058: Pelvis Nub
+    400060: Right Arm
+    400062: Right Arm Controller
+    400064: Right Clavicle
+    400066: Right Foot
+    400068: Right Foot Controller
+    400070: Right Knee
+    400072: Right Shoulder
+    400074: Right Shoulder Controller
+    400076: Right Thigh
+    400078: Right Toe
+    400080: Right Toe Nub
+    400082: Right Wrist
+    400084: Right Wrist Controller
+    400086: Spine Base
+    400088: Tail
+    400090: Tail Controller
+    400092: Tail Controller 2
+    400094: Tail Controller 3
+    400096: Tail Controller 4
+    400098: Tail end
+    400100: Top Jaw
+    400102: Upper Body Control
+    400104: Upper Jaw
+    400106: Upper Spine
+    400108: Upper tail
+    400110: Waist Swivel
+    400112: Whole Rig
+    4300000: Gator
+    7400000: 'Run '
+    7400002: Ability 1
+    7400004: Nothing Idle
+    7400006: Character Select Idle
+    7400008: Character Selected Idle
+    7400010: Ability 2
+    7400012: Attack
+    7400014: Move Idle
+    7400016: Strafe Left
+    7400018: Strafe Right
+    7400020: Backpedal
+    7400022: Death
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Gator
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: 'Run '
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 47
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Gator
+        weight: 1
+      - path: Whole Rig
+        weight: 1
+      - path: Whole Rig/Hip Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail/Lower Tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Middle Tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Tail Controller 4
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Tail Controller 4/Upper tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Tail Controller 4/Upper tail/Tail end
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left  Shoulder Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left  Shoulder Controller/Left Arm Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left  Shoulder Controller/Left Arm Controller/Left Wrist
+          Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left Shoulder
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left Shoulder/Left Arm
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left Shoulder/Left Arm/Left Wrist
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Head/Neck Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Jaw Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Lower Jaw
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Lower Jaw/Jaw Bottom
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Upper Jaw
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Upper Jaw/Top Jaw
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder/Right Arm
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder/Right Arm/Right Wrist
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder Controller/Right Arm Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder Controller/Right Arm Controller/Right
+          Wrist Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee/Left
+          Foot
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee/Left
+          Foot/Left Toe
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee/Left
+          Foot/Left Toe/Left Toe Nub
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Pelvis Nub
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee/Right
+          Foot
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee/Right
+          Foot/Right Toe
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee/Right
+          Foot/Right Toe/Right Toe Nub
+        weight: 1
+      - path: Whole Rig/Left Foot Controller
+        weight: 1
+      - path: Whole Rig/Left Foot Controller/IK Chain002
+        weight: 1
+      - path: Whole Rig/Right Foot Controller
+        weight: 1
+      - path: Whole Rig/Right Foot Controller/IK Chain001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Ability 1
+      takeName: Take 001
+      firstFrame: 60
+      lastFrame: 88
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Gator
+        weight: 1
+      - path: Whole Rig
+        weight: 1
+      - path: Whole Rig/Hip Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail/Lower Tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Middle Tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Tail Controller 4
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Tail Controller 4/Upper tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Tail Controller 4/Upper tail/Tail end
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left  Shoulder Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left  Shoulder Controller/Left Arm Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left  Shoulder Controller/Left Arm Controller/Left Wrist
+          Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left Shoulder
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left Shoulder/Left Arm
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left Shoulder/Left Arm/Left Wrist
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Head/Neck Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Jaw Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Lower Jaw
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Lower Jaw/Jaw Bottom
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Upper Jaw
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Upper Jaw/Top Jaw
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder/Right Arm
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder/Right Arm/Right Wrist
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder Controller/Right Arm Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder Controller/Right Arm Controller/Right
+          Wrist Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee/Left
+          Foot
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee/Left
+          Foot/Left Toe
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee/Left
+          Foot/Left Toe/Left Toe Nub
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Pelvis Nub
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee/Right
+          Foot
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee/Right
+          Foot/Right Toe
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee/Right
+          Foot/Right Toe/Right Toe Nub
+        weight: 1
+      - path: Whole Rig/Left Foot Controller
+        weight: 1
+      - path: Whole Rig/Left Foot Controller/IK Chain002
+        weight: 1
+      - path: Whole Rig/Right Foot Controller
+        weight: 1
+      - path: Whole Rig/Right Foot Controller/IK Chain001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Nothing Idle
+      takeName: Take 001
+      firstFrame: 90
+      lastFrame: 150
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Gator
+        weight: 1
+      - path: Whole Rig
+        weight: 1
+      - path: Whole Rig/Hip Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail/Lower Tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Middle Tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Tail Controller 4
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Tail Controller 4/Upper tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Tail Controller 4/Upper tail/Tail end
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left  Shoulder Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left  Shoulder Controller/Left Arm Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left  Shoulder Controller/Left Arm Controller/Left Wrist
+          Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left Shoulder
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left Shoulder/Left Arm
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left Shoulder/Left Arm/Left Wrist
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Head/Neck Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Jaw Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Lower Jaw
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Lower Jaw/Jaw Bottom
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Upper Jaw
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Upper Jaw/Top Jaw
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder/Right Arm
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder/Right Arm/Right Wrist
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder Controller/Right Arm Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder Controller/Right Arm Controller/Right
+          Wrist Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee/Left
+          Foot
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee/Left
+          Foot/Left Toe
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee/Left
+          Foot/Left Toe/Left Toe Nub
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Pelvis Nub
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee/Right
+          Foot
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee/Right
+          Foot/Right Toe
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee/Right
+          Foot/Right Toe/Right Toe Nub
+        weight: 1
+      - path: Whole Rig/Left Foot Controller
+        weight: 1
+      - path: Whole Rig/Left Foot Controller/IK Chain002
+        weight: 1
+      - path: Whole Rig/Right Foot Controller
+        weight: 1
+      - path: Whole Rig/Right Foot Controller/IK Chain001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Character Select Idle
+      takeName: Take 001
+      firstFrame: 180
+      lastFrame: 265
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Gator
+        weight: 1
+      - path: Whole Rig
+        weight: 1
+      - path: Whole Rig/Hip Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail/Lower Tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Middle Tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Tail Controller 4
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Tail Controller 4/Upper tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Tail Controller 4/Upper tail/Tail end
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left  Shoulder Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left  Shoulder Controller/Left Arm Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left  Shoulder Controller/Left Arm Controller/Left Wrist
+          Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left Shoulder
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left Shoulder/Left Arm
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left Shoulder/Left Arm/Left Wrist
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Head/Neck Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Jaw Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Lower Jaw
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Lower Jaw/Jaw Bottom
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Upper Jaw
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Upper Jaw/Top Jaw
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder/Right Arm
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder/Right Arm/Right Wrist
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder Controller/Right Arm Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder Controller/Right Arm Controller/Right
+          Wrist Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee/Left
+          Foot
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee/Left
+          Foot/Left Toe
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee/Left
+          Foot/Left Toe/Left Toe Nub
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Pelvis Nub
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee/Right
+          Foot
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee/Right
+          Foot/Right Toe
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee/Right
+          Foot/Right Toe/Right Toe Nub
+        weight: 1
+      - path: Whole Rig/Left Foot Controller
+        weight: 1
+      - path: Whole Rig/Left Foot Controller/IK Chain002
+        weight: 1
+      - path: Whole Rig/Right Foot Controller
+        weight: 1
+      - path: Whole Rig/Right Foot Controller/IK Chain001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Character Selected Idle
+      takeName: Take 001
+      firstFrame: 265
+      lastFrame: 380
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Gator
+        weight: 1
+      - path: Whole Rig
+        weight: 1
+      - path: Whole Rig/Hip Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail/Lower Tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Middle Tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Tail Controller 4
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Tail Controller 4/Upper tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Tail Controller 4/Upper tail/Tail end
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left  Shoulder Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left  Shoulder Controller/Left Arm Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left  Shoulder Controller/Left Arm Controller/Left Wrist
+          Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left Shoulder
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left Shoulder/Left Arm
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left Shoulder/Left Arm/Left Wrist
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Head/Neck Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Jaw Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Lower Jaw
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Lower Jaw/Jaw Bottom
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Upper Jaw
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Upper Jaw/Top Jaw
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder/Right Arm
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder/Right Arm/Right Wrist
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder Controller/Right Arm Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder Controller/Right Arm Controller/Right
+          Wrist Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee/Left
+          Foot
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee/Left
+          Foot/Left Toe
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee/Left
+          Foot/Left Toe/Left Toe Nub
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Pelvis Nub
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee/Right
+          Foot
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee/Right
+          Foot/Right Toe
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee/Right
+          Foot/Right Toe/Right Toe Nub
+        weight: 1
+      - path: Whole Rig/Left Foot Controller
+        weight: 1
+      - path: Whole Rig/Left Foot Controller/IK Chain002
+        weight: 1
+      - path: Whole Rig/Right Foot Controller
+        weight: 1
+      - path: Whole Rig/Right Foot Controller/IK Chain001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Ability 2
+      takeName: Take 001
+      firstFrame: 400
+      lastFrame: 460
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Gator
+        weight: 1
+      - path: Whole Rig
+        weight: 1
+      - path: Whole Rig/Hip Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail/Lower Tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Middle Tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Tail Controller 4
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Tail Controller 4/Upper tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Tail Controller 4/Upper tail/Tail end
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left  Shoulder Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left  Shoulder Controller/Left Arm Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left  Shoulder Controller/Left Arm Controller/Left Wrist
+          Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left Shoulder
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left Shoulder/Left Arm
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left Shoulder/Left Arm/Left Wrist
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Head/Neck Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Jaw Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Lower Jaw
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Lower Jaw/Jaw Bottom
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Upper Jaw
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Upper Jaw/Top Jaw
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder/Right Arm
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder/Right Arm/Right Wrist
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder Controller/Right Arm Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder Controller/Right Arm Controller/Right
+          Wrist Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee/Left
+          Foot
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee/Left
+          Foot/Left Toe
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee/Left
+          Foot/Left Toe/Left Toe Nub
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Pelvis Nub
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee/Right
+          Foot
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee/Right
+          Foot/Right Toe
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee/Right
+          Foot/Right Toe/Right Toe Nub
+        weight: 1
+      - path: Whole Rig/Left Foot Controller
+        weight: 1
+      - path: Whole Rig/Left Foot Controller/IK Chain002
+        weight: 1
+      - path: Whole Rig/Right Foot Controller
+        weight: 1
+      - path: Whole Rig/Right Foot Controller/IK Chain001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Attack
+      takeName: Take 001
+      firstFrame: 480
+      lastFrame: 510
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Gator
+        weight: 1
+      - path: Whole Rig
+        weight: 1
+      - path: Whole Rig/Hip Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail/Lower Tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Middle Tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Tail Controller 4
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Tail Controller 4/Upper tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Tail Controller 4/Upper tail/Tail end
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left  Shoulder Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left  Shoulder Controller/Left Arm Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left  Shoulder Controller/Left Arm Controller/Left Wrist
+          Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left Shoulder
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left Shoulder/Left Arm
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left Shoulder/Left Arm/Left Wrist
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Head/Neck Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Jaw Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Lower Jaw
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Lower Jaw/Jaw Bottom
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Upper Jaw
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Upper Jaw/Top Jaw
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder/Right Arm
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder/Right Arm/Right Wrist
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder Controller/Right Arm Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder Controller/Right Arm Controller/Right
+          Wrist Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee/Left
+          Foot
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee/Left
+          Foot/Left Toe
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee/Left
+          Foot/Left Toe/Left Toe Nub
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Pelvis Nub
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee/Right
+          Foot
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee/Right
+          Foot/Right Toe
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee/Right
+          Foot/Right Toe/Right Toe Nub
+        weight: 1
+      - path: Whole Rig/Left Foot Controller
+        weight: 1
+      - path: Whole Rig/Left Foot Controller/IK Chain002
+        weight: 1
+      - path: Whole Rig/Right Foot Controller
+        weight: 1
+      - path: Whole Rig/Right Foot Controller/IK Chain001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Move Idle
+      takeName: Take 001
+      firstFrame: 515
+      lastFrame: 605
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Gator
+        weight: 1
+      - path: Whole Rig
+        weight: 1
+      - path: Whole Rig/Hip Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail/Lower Tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Middle Tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Tail Controller 4
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Tail Controller 4/Upper tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Tail Controller 4/Upper tail/Tail end
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left  Shoulder Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left  Shoulder Controller/Left Arm Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left  Shoulder Controller/Left Arm Controller/Left Wrist
+          Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left Shoulder
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left Shoulder/Left Arm
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left Shoulder/Left Arm/Left Wrist
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Head/Neck Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Jaw Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Lower Jaw
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Lower Jaw/Jaw Bottom
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Upper Jaw
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Upper Jaw/Top Jaw
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder/Right Arm
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder/Right Arm/Right Wrist
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder Controller/Right Arm Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder Controller/Right Arm Controller/Right
+          Wrist Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee/Left
+          Foot
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee/Left
+          Foot/Left Toe
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee/Left
+          Foot/Left Toe/Left Toe Nub
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Pelvis Nub
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee/Right
+          Foot
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee/Right
+          Foot/Right Toe
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee/Right
+          Foot/Right Toe/Right Toe Nub
+        weight: 1
+      - path: Whole Rig/Left Foot Controller
+        weight: 1
+      - path: Whole Rig/Left Foot Controller/IK Chain002
+        weight: 1
+      - path: Whole Rig/Right Foot Controller
+        weight: 1
+      - path: Whole Rig/Right Foot Controller/IK Chain001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Strafe Left
+      takeName: Take 001
+      firstFrame: 615
+      lastFrame: 650
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Gator
+        weight: 1
+      - path: Whole Rig
+        weight: 1
+      - path: Whole Rig/Hip Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail/Lower Tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Middle Tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Tail Controller 4
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Tail Controller 4/Upper tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Tail Controller 4/Upper tail/Tail end
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left  Shoulder Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left  Shoulder Controller/Left Arm Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left  Shoulder Controller/Left Arm Controller/Left Wrist
+          Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left Shoulder
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left Shoulder/Left Arm
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left Shoulder/Left Arm/Left Wrist
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Head/Neck Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Jaw Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Lower Jaw
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Lower Jaw/Jaw Bottom
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Upper Jaw
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Upper Jaw/Top Jaw
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder/Right Arm
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder/Right Arm/Right Wrist
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder Controller/Right Arm Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder Controller/Right Arm Controller/Right
+          Wrist Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee/Left
+          Foot
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee/Left
+          Foot/Left Toe
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee/Left
+          Foot/Left Toe/Left Toe Nub
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Pelvis Nub
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee/Right
+          Foot
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee/Right
+          Foot/Right Toe
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee/Right
+          Foot/Right Toe/Right Toe Nub
+        weight: 1
+      - path: Whole Rig/Left Foot Controller
+        weight: 1
+      - path: Whole Rig/Left Foot Controller/IK Chain002
+        weight: 1
+      - path: Whole Rig/Right Foot Controller
+        weight: 1
+      - path: Whole Rig/Right Foot Controller/IK Chain001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Strafe Right
+      takeName: Take 001
+      firstFrame: 655
+      lastFrame: 689
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Gator
+        weight: 1
+      - path: Whole Rig
+        weight: 1
+      - path: Whole Rig/Hip Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail/Lower Tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Middle Tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Tail Controller 4
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Tail Controller 4/Upper tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Tail Controller 4/Upper tail/Tail end
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left  Shoulder Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left  Shoulder Controller/Left Arm Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left  Shoulder Controller/Left Arm Controller/Left Wrist
+          Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left Shoulder
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left Shoulder/Left Arm
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left Shoulder/Left Arm/Left Wrist
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Head/Neck Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Jaw Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Lower Jaw
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Lower Jaw/Jaw Bottom
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Upper Jaw
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Upper Jaw/Top Jaw
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder/Right Arm
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder/Right Arm/Right Wrist
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder Controller/Right Arm Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder Controller/Right Arm Controller/Right
+          Wrist Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee/Left
+          Foot
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee/Left
+          Foot/Left Toe
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee/Left
+          Foot/Left Toe/Left Toe Nub
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Pelvis Nub
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee/Right
+          Foot
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee/Right
+          Foot/Right Toe
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee/Right
+          Foot/Right Toe/Right Toe Nub
+        weight: 1
+      - path: Whole Rig/Left Foot Controller
+        weight: 1
+      - path: Whole Rig/Left Foot Controller/IK Chain002
+        weight: 1
+      - path: Whole Rig/Right Foot Controller
+        weight: 1
+      - path: Whole Rig/Right Foot Controller/IK Chain001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Backpedal
+      takeName: Take 001
+      firstFrame: 705
+      lastFrame: 750
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Gator
+        weight: 1
+      - path: Whole Rig
+        weight: 1
+      - path: Whole Rig/Hip Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail/Lower Tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Middle Tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Tail Controller 4
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Tail Controller 4/Upper tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Tail Controller 4/Upper tail/Tail end
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left  Shoulder Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left  Shoulder Controller/Left Arm Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left  Shoulder Controller/Left Arm Controller/Left Wrist
+          Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left Shoulder
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left Shoulder/Left Arm
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left Shoulder/Left Arm/Left Wrist
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Head/Neck Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Jaw Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Lower Jaw
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Lower Jaw/Jaw Bottom
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Upper Jaw
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Upper Jaw/Top Jaw
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder/Right Arm
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder/Right Arm/Right Wrist
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder Controller/Right Arm Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder Controller/Right Arm Controller/Right
+          Wrist Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee/Left
+          Foot
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee/Left
+          Foot/Left Toe
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee/Left
+          Foot/Left Toe/Left Toe Nub
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Pelvis Nub
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee/Right
+          Foot
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee/Right
+          Foot/Right Toe
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee/Right
+          Foot/Right Toe/Right Toe Nub
+        weight: 1
+      - path: Whole Rig/Left Foot Controller
+        weight: 1
+      - path: Whole Rig/Left Foot Controller/IK Chain002
+        weight: 1
+      - path: Whole Rig/Right Foot Controller
+        weight: 1
+      - path: Whole Rig/Right Foot Controller/IK Chain001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Death
+      takeName: Take 001
+      firstFrame: 760
+      lastFrame: 825
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Gator
+        weight: 1
+      - path: Whole Rig
+        weight: 1
+      - path: Whole Rig/Hip Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail/Lower Tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Middle Tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Tail Controller 4
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Tail Controller 4/Upper tail
+        weight: 1
+      - path: Whole Rig/Hip Control/Tail Controller/Tail Controller 2/Tail Controller
+          3/Tail Controller 4/Upper tail/Tail end
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left  Shoulder Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left  Shoulder Controller/Left Arm Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left  Shoulder Controller/Left Arm Controller/Left Wrist
+          Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left Shoulder
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left Shoulder/Left Arm
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Left CLavicle/Left Shoulder/Left Arm/Left Wrist
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Head/Neck Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Jaw Control
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Lower Jaw
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Lower Jaw/Jaw Bottom
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Upper Jaw
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Neck Fix/Upper Spine/Neck/Upper Jaw/Top Jaw
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder/Right Arm
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder/Right Arm/Right Wrist
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder Controller/Right Arm Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Upper Body Control/Spine Base/Lower Spine/Mid
+          Spine/Right Clavicle/Right Shoulder Controller/Right Arm Controller/Right
+          Wrist Controller
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee/Left
+          Foot
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee/Left
+          Foot/Left Toe
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Left Thigh/Left Knee/Left
+          Foot/Left Toe/Left Toe Nub
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Pelvis Nub
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee/Right
+          Foot
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee/Right
+          Foot/Right Toe
+        weight: 1
+      - path: Whole Rig/Hip Control/Waist Swivel/Pelvis/Right Thigh/Right Knee/Right
+          Foot/Right Toe/Right Toe Nub
+        weight: 1
+      - path: Whole Rig/Left Foot Controller
+        weight: 1
+      - path: Whole Rig/Left Foot Controller/IK Chain002
+        weight: 1
+      - path: Whole Rig/Right Foot Controller
+        weight: 1
+      - path: Whole Rig/Right Foot Controller/IK Chain001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

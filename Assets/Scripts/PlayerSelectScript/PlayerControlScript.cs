@@ -9,7 +9,7 @@ public class PlayerControlScript : MonoBehaviour {
 	public GameObject jeremiahPrefab;
 	public GameObject croakPrefab;
 
-	const int maxPlayers = 4;
+	const int maxPlayers = 2;
 
 	private static Vector3 p1SpawnSpoint = new Vector3 (-4.46f, .15f, .06f);
 	private static Vector3 p2SpawnSpoint = new Vector3 (-1.46f, .15f, -.46f);
@@ -77,16 +77,15 @@ public class PlayerControlScript : MonoBehaviour {
 		var playerCount = players.Count;
 		for (var i = 0; i < playerCount; i++) {
 			var player = players[i];
-			if (XanderScript.S.Device == inputDevice) {
+			if ((XanderScript.S.Device == inputDevice) || (SheraScript.S.Device == inputDevice) || (JeremiahScript.S.Device == inputDevice) || (CroakScript.S.Device == inputDevice)) {
 				return player;
 			}
 		}
-
 		return null;
 	}
 
 	bool ThereIsNoPlayerUsingDevice (InputDevice inputDevice) {
-		return FindPlayerUsingDevice (inputDevice) == null;
+		return (FindPlayerUsingDevice (inputDevice) == null);
 	}
 
 	void OnDeviceDetached (InputDevice inputDevice) {
@@ -163,7 +162,6 @@ public class PlayerControlScript : MonoBehaviour {
 		Destroy( player.gameObject );
 	}
 
-	/*
 	void OnGUI() {
 		const float h = 22.0f;
 		var y = 10.0f;
@@ -176,5 +174,4 @@ public class PlayerControlScript : MonoBehaviour {
 			y += h;
 		}
 	}
-	*/
 }
