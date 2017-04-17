@@ -32,7 +32,7 @@ public class GrenadeScript : MonoBehaviour {
 	void Explosion (Collision col) {
 		if (col.gameObject.tag == "Player") {
 			healthBarScript = col.transform.FindChild ("HealthBarCanvas").GetComponent<HealthBarScript> ();
-			healthBarScript.GetHit (5f);
+			healthBarScript.GetHit (XanderScript.S.xanderBasicDamage);
 		}
 	}
 }

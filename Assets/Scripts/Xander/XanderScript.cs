@@ -17,8 +17,7 @@ public class XanderScript : MonoBehaviour {
 	public Animation playerAnim;
 	public GameObject playerBody;
 	public GameObject playerParent;
-	[HideInInspector]
-	public bool canMove = true;
+	[HideInInspector] public bool canMove = true;
 
 	// Private Static Variables
 	private Vector3 moveDirection = Vector3.zero;
@@ -51,7 +50,7 @@ public class XanderScript : MonoBehaviour {
 	*/
 
 	[Header ("Xander Dig Variables")]
-	[Range (0, 100)] public float xanderDigDistance;
+	[Range (0, 2)] public float xanderDigDistance;
 	[Range (0, 10)] public float xanderDigCD;
 	public float xanderDigSpeed;
 	private bool digCooling;
@@ -99,10 +98,25 @@ public class XanderScript : MonoBehaviour {
 				}
 			}
 
-			if (Device.LeftBumper.IsPressed) {
+			if (Device.DPadDown.IsPressed) {
 				if (mineCooling == false)
 					xanderMine (playerBody);
 				playerAnim.Play ("Ability 1");
+			}
+			#endregion
+
+			#region *** XANDER DIG ABILITY ***
+			if (digCooling) {
+				xanderDigCD -= Time.deltaTime;
+
+				if (xanderDigCD <= 0f) {
+					digCooling = false;
+					xanderDigCD = xanderDigSpeed;
+				}
+			}
+
+			if (Device.DPadUp.IsPressed) {
+				this.transform.position += playerBody.transform.forward * xanderDigDistance;
 			}
 			#endregion
 
@@ -162,13 +176,5 @@ public class XanderScript : MonoBehaviour {
 		creation = Instantiate (Resources.Load ("XanderMine"), mineSpawnPoint.transform.position, mineSpawnPoint.transform.rotation) as GameObject;
 		playerAnim.Play ("Ability 1");
 		canMove = true;
-	}
-
-	public void xanderUlt (float ultDamage, float ultCD, float ultSpeed) {
-		
-	}
-
-	public void xanderDig (float digDistance, float digCD, float digSpeed) {
-		
 	}
 }

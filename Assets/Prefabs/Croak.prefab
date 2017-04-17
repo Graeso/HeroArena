@@ -962,8 +962,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4079997160587446}
-  - component: {fileID: 143152076945895274}
   - component: {fileID: 114954073110156468}
+  - component: {fileID: 143152076945895274}
   m_Layer: 14
   m_Name: Croak
   m_TagString: Player

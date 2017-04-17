@@ -1062,8 +1062,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4591776738989488}
-  - component: {fileID: 143290562001960834}
   - component: {fileID: 114152893804763266}
+  - component: {fileID: 143290562001960834}
   m_Layer: 8
   m_Name: Xander
   m_TagString: Player
@@ -1692,15 +1692,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1983741191414166}
-  m_LocalRotation: {x: -0, y: 0.15994228, z: -0, w: 0.98712635}
-  m_LocalPosition: {x: -3.2697449, y: 0.15000004, z: -7.954035}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.48, y: 0.15000004, z: -3.99}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4313582318009372}
   - {fileID: 224856225319281656}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 18.407001, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4631164588503162
 Transform:
   m_ObjectHideFlags: 1
@@ -2075,7 +2075,7 @@ MonoBehaviour:
   xanderMineDamage: 45
   xanderMineCD: 5
   xanderMineSpeed: 5
-  xanderDigDistance: 25
+  xanderDigDistance: 1
   xanderDigCD: 8
   xanderDigSpeed: 8
   basicSpawnPoint: {fileID: 1307683687544014}

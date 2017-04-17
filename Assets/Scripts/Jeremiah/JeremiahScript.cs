@@ -17,8 +17,8 @@ public class JeremiahScript : MonoBehaviour {
 	public Animation playerAnim;
 	public GameObject playerBody;
 	public GameObject playerParent;
-	[HideInInspector]
-	public bool canMove = true;
+	public GameObject basicSpawnPoint;
+	[HideInInspector] public bool canMove = true;
 
 	// Private Static Variables
 	private Vector3 moveDirection = Vector3.zero;
@@ -33,8 +33,16 @@ public class JeremiahScript : MonoBehaviour {
 	[Header ("Jeremiah Basic Attack Variables")]
 	[Range (0, 100)] public float jeremiahBasicDamage;
 	[Range (0, 10)] public float jeremiahBasicCD;
-	public float jeremiahBasicSpeed = .5f;
-	private bool basicCooling;
+	[Range (0, 1)] public float jeremiahBasicRange;
+	public float jeremiahBasicSpeed;
+	private bool jeremiahBasicCooling;
+
+	[Header ("Jeremiah Inner Blood Variables")]
+	public bool innerBlood = false;
+
+	[Header ("Jeremiah Miscellaneous Variables")]
+	HealthBarScript healthBarScript; 
+
 	#endregion
 
 	void Awake () {
@@ -43,20 +51,23 @@ public class JeremiahScript : MonoBehaviour {
 
 	void Update () {
 
+		this.transform.position = new Vector3 (transform.position.x, 0, transform.position.z);
+
 		if (Device != null) {
-			if (basicCooling) {
+			if (jeremiahBasicCooling) {
 				jeremiahBasicCD -= Time.deltaTime;
 
 				if (jeremiahBasicCD <= 0f) {
-					basicCooling = false;
+					jeremiahBasicCooling = false;
 					jeremiahBasicCD = jeremiahBasicSpeed;
 				}
 			}
 
 			if (Device.RightBumper.IsPressed) {
-				if (basicCooling == false)
-					jeremiahBasic (playerBody);
-				playerAnim.Play ("Attack V1");
+				if (jeremiahBasicCooling == false) {
+					jeremiahBasic (jeremiahBasicRange);
+				}
+				//playerAnim.Play ("Attack V1");
 			}
 
 			if (canMove) {
@@ -97,9 +108,16 @@ public class JeremiahScript : MonoBehaviour {
 		}
 	}
 
-	public void jeremiahBasic (GameObject thisPlayer) {
-		basicCooling = true;
-		//GameObject creation;
+	public void jeremiahBasic (float jeremiahBasicRange) {
+		jeremiahBasicCooling = true;
+		RaycastHit hit;
+		Debug.DrawRay (basicSpawnPoint.transform.position, basicSpawnPoint.transform.forward * jeremiahBasicRange);
+		if (Physics.Raycast (basicSpawnPoint.transform.position, basicSpawnPoint.transform.forward, out hit, jeremiahBasicRange)) {
+			if (hit.collider.tag == "Player") {
+				healthBarScript = hit.transform.FindChild ("HealthBarCanvas").GetComponent<HealthBarScript> ();
+				healthBarScript.GetHit (jeremiahBasicDamage);
+			}
+		}
 	}
 
 }
