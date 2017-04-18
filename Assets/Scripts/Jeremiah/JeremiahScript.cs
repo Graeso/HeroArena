@@ -41,7 +41,8 @@ public class JeremiahScript : MonoBehaviour {
 	public bool innerBlood = false;
 
 	[Header ("Jeremiah Miscellaneous Variables")]
-	HealthBarScript healthBarScript; 
+	HealthBarScript healthBarScript;
+	public float coneAngle = 45f;
 
 	#endregion
 
@@ -50,10 +51,12 @@ public class JeremiahScript : MonoBehaviour {
 	}
 
 	void Update () {
-
+		
 		this.transform.position = new Vector3 (transform.position.x, 0, transform.position.z);
 
 		if (Device != null) {
+
+			#region *** JEREMIAH BASIC ATTACK ***
 			if (jeremiahBasicCooling) {
 				jeremiahBasicCD -= Time.deltaTime;
 
@@ -69,6 +72,13 @@ public class JeremiahScript : MonoBehaviour {
 				}
 				//playerAnim.Play ("Attack V1");
 			}
+			#endregion
+
+			#region *** JEREMIAH INNER BLOOD ***
+			#endregion
+
+			#region *** JEREMIAH CRIMSON REACH ***
+			#endregion
 
 			if (canMove) {
 				// Moving and rotating the character with the left stick
@@ -110,14 +120,27 @@ public class JeremiahScript : MonoBehaviour {
 
 	public void jeremiahBasic (float jeremiahBasicRange) {
 		jeremiahBasicCooling = true;
-		RaycastHit hit;
-		Debug.DrawRay (basicSpawnPoint.transform.position, basicSpawnPoint.transform.forward * jeremiahBasicRange);
-		if (Physics.Raycast (basicSpawnPoint.transform.position, basicSpawnPoint.transform.forward, out hit, jeremiahBasicRange)) {
-			if (hit.collider.tag == "Player") {
+		Vector3 explosionPos = basicSpawnPoint.transform.position;
+		Collider[] hitColliders = Physics.OverlapSphere (explosionPos, jeremiahBasicRange);
+
+		foreach (Collider hit in hitColliders) {
+			if ((hit.GetComponent<Collider>().tag == "Player") && (hit.gameObject != playerParent.gameObject) && (Vector3.Angle (basicSpawnPoint.transform.forward, hit.transform.position - explosionPos) <= coneAngle)) {
 				healthBarScript = hit.transform.FindChild ("HealthBarCanvas").GetComponent<HealthBarScript> ();
 				healthBarScript.GetHit (jeremiahBasicDamage);
 			}
 		}
 	}
 
+	public void jeremiahBasic2 (float jeremiahBasicRange) {
+		jeremiahBasicCooling = true;
+		Vector3 explosionPos = basicSpawnPoint.transform.position;
+		Collider[] hitColliders = Physics.OverlapSphere (explosionPos, jeremiahBasicRange);
+
+		foreach (Collider hit in hitColliders) {
+			if ((hit.GetComponent<Collider> ().tag == "Player") && (hit.gameObject != playerParent.gameObject) && (Vector3.Angle (basicSpawnPoint.transform.forward, hit.transform.position - explosionPos) <= coneAngle)) {
+				healthBarScript = hit.transform.FindChild ("HealthBarCanvas").GetComponent<HealthBarScript> ();
+				healthBarScript.GetHit (jeremiahBasicDamage);
+			}
+		}
+	}
 }
