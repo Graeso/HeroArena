@@ -262,6 +262,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1382713735392138
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4143320749556458}
+  m_Layer: 12
+  m_Name: sheraBasicSpawn
+  m_TagString: Weapon
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1392917346488808
 GameObject:
   m_ObjectHideFlags: 1
@@ -834,6 +849,19 @@ Transform:
   m_Father: {fileID: 4313082289632030}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4143320749556458
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1382713735392138}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.334, z: 0.131}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4364115472321928}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4168610001846382
 Transform:
   m_ObjectHideFlags: 1
@@ -973,6 +1001,7 @@ Transform:
   - {fileID: 4667908814754190}
   - {fileID: 4168610001846382}
   - {fileID: 4217426151972504}
+  - {fileID: 4143320749556458}
   m_Father: {fileID: 4740288721770506}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1182,15 +1211,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1345801955983058}
-  m_LocalRotation: {x: -0, y: 0.9656806, z: -0, w: 0.25973278}
-  m_LocalPosition: {x: -2.43, y: 0.11799997, z: 4.31}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.61, y: -0.081, z: 1.775}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4364115472321928}
   - {fileID: 224698515296130904}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 149.89201, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4752778278994994
 Transform:
   m_ObjectHideFlags: 1
@@ -1374,6 +1403,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &23577645369073442
 MeshRenderer:
@@ -1405,6 +1435,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &23718160048985816
 MeshRenderer:
@@ -1419,7 +1450,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 263c844c8aeda8d42903acf7eefba4b7, type: 2}
+  - {fileID: 2100000, guid: 4637241ff90196f47953b4226e984fa1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1436,6 +1467,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &33043526955269648
 MeshFilter:
@@ -1636,11 +1668,13 @@ MonoBehaviour:
   playerAnim: {fileID: 111663278331753900}
   playerBody: {fileID: 1454430709254322}
   playerParent: {fileID: 1345801955983058}
+  basicSpawnPoint: {fileID: 1382713735392138}
   canMove: 1
   maxHealth: 200
   maxStamina: 100
-  sheraBasicDamage: 20
-  sheraBasicCD: 0.25
+  sheraBasicDamage: 5
+  sheraBasicCD: 0.1
+  sheraBasicRange: 1
   sheraBasicSpeed: 0.5
 --- !u!137 &137747486918122068
 SkinnedMeshRenderer:
@@ -1655,7 +1689,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: e20db8260d2e2404dab83cfd5324c775, type: 2}
+  - {fileID: 2100000, guid: 7a739bebf82ded843b5531debbcb282f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1672,6 +1706,7 @@ SkinnedMeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   serializedVersion: 2
   m_Quality: 0
@@ -1761,11 +1796,16 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300006, guid: 82aa1cdca3f7065438c940adb852a56a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
 --- !u!222 &222112779214859688
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -1791,7 +1831,7 @@ Canvas:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1013675663160428}
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_RenderMode: 2
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
@@ -1800,6 +1840,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0

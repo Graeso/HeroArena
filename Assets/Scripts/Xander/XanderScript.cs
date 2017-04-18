@@ -69,6 +69,8 @@ public class XanderScript : MonoBehaviour {
 
 	void Update () {
 
+		this.transform.position = new Vector3 (transform.position.x, 0, transform.position.z);
+
 		if (Device != null) {
 
 			#region *** XANDER BASIC ATTACK ***
@@ -101,7 +103,7 @@ public class XanderScript : MonoBehaviour {
 			if (Device.DPadDown.IsPressed) {
 				if (mineCooling == false)
 					xanderMine (playerBody);
-				playerAnim.Play ("Ability 1");
+				//playerAnim.Play ("Ability 1");
 			}
 			#endregion
 

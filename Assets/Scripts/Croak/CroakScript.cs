@@ -17,8 +17,8 @@ public class CroakScript : MonoBehaviour {
 	public Animation playerAnim;
 	public GameObject playerBody;
 	public GameObject playerParent;
-	[HideInInspector]
-	public bool canMove = true;
+	public GameObject basicSpawnPoint;
+	[HideInInspector] public bool canMove = true;
 
 	// Private Static Variables
 	private Vector3 moveDirection = Vector3.zero;
@@ -33,8 +33,12 @@ public class CroakScript : MonoBehaviour {
 	[Header ("Croak Basic Attack Variables")]
 	[Range (0, 100)] public float croakBasicDamage;
 	[Range (0, 10)] public float croakBasicCD;
-	public float croakBasicSpeed = .5f;
-	private bool basicCooling;
+	[Range (0, 1)] public float croakBasicRange;
+	public float croakBasicSpeed;
+	private bool croakBasicCooling;
+
+	[Header ("Croak Miscellaneous Variables")]
+	HealthBarScript healthBarScript; 
 	#endregion
 
 	void Awake () {
@@ -43,21 +47,32 @@ public class CroakScript : MonoBehaviour {
 
 	void Update () {
 
+		this.transform.position = new Vector3 (transform.position.x, 0, transform.position.z);
+
 		if (Device != null) {
-			if (basicCooling) {
+
+			#region *** CROAK BASIC ATTACK ***
+			if (croakBasicCooling) {
 				croakBasicCD -= Time.deltaTime;
 
 				if (croakBasicCD <= 0f) {
-					basicCooling = false;
+					croakBasicCooling = false;
 					croakBasicCD = croakBasicSpeed;
 				}
 			}
 
 			if (Device.RightBumper.IsPressed) {
-				if (basicCooling == false)
-					croakBasic (playerBody);
-				playerAnim.Play ("Attack V1");
+				if (croakBasicCooling == false)
+					croakBasic (croakBasicRange);
+				//playerAnim.Play ("Attack V1");
 			}
+			#endregion
+
+			#region *** CROAK MANGLE ***
+			#endregion
+
+			#region *** CROAK FIRE BREATH ***
+			#endregion
 
 			if (canMove) {
 				// Moving and rotating the character with the left stick
@@ -97,9 +112,16 @@ public class CroakScript : MonoBehaviour {
 		}
 	}
 
-	public void croakBasic (GameObject thisPlayer) {
-		basicCooling = true;
-		//GameObject creation;
+	public void croakBasic (float croakBasicRange) {
+		croakBasicCooling = true;
+		RaycastHit hit;
+		Debug.DrawRay (basicSpawnPoint.transform.position, basicSpawnPoint.transform.forward * croakBasicRange);
+		if (Physics.Raycast (basicSpawnPoint.transform.position, basicSpawnPoint.transform.forward, out hit, croakBasicRange)) {
+			if (hit.collider.tag == "Player") {
+				healthBarScript = hit.transform.FindChild ("HealthBarCanvas").GetComponent<HealthBarScript> ();
+				healthBarScript.GetHit (croakBasicDamage);
+			}
+		}
 	}
 
 }
