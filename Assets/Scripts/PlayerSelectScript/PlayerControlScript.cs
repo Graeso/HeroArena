@@ -9,7 +9,7 @@ public class PlayerControlScript : MonoBehaviour {
 	public GameObject jeremiahPrefab;
 	public GameObject croakPrefab;
 
-	const int maxPlayers = 2;
+	public const int maxPlayers = 2;
 
 	private static Vector3 p1SpawnSpoint = new Vector3 (-4.46f, .15f, .06f);
 	private static Vector3 p2SpawnSpoint = new Vector3 (-1.46f, .15f, -.46f);
@@ -166,11 +166,21 @@ public class PlayerControlScript : MonoBehaviour {
 		const float h = 22.0f;
 		var y = 10.0f;
 
+		GUI.color = Color.black;
+
 		GUI.Label (new Rect(10, y, 300, y + h), "Active players: " + players.Count + "/" + maxPlayers);
 		y += h;
 
 		if (players.Count < maxPlayers) {
 			GUI.Label (new Rect(10, y, 300, y + h), "Press a button to join!");
+			y += h;
+			GUI.Label (new Rect(10, y, 300, y + h), "Press A for Xander");
+			y += h;
+			GUI.Label (new Rect(10, y, 300, y + h), "Press B for Shera");
+			y += h;
+			GUI.Label (new Rect(10, y, 300, y + h), "Press X for Jeremiah");
+			y += h;
+			GUI.Label (new Rect(10, y, 300, y + h), "Press Y for Croak");
 			y += h;
 		}
 	}

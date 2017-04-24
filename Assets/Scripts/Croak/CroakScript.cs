@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using InControl;
 
-public class CroakScript : MonoBehaviour {
+public class CroakScript : MonoBehaviour
+{
 	public static CroakScript S;
 
 	public InputDevice Device { get; set; }
 
 	#region Variables
+
 	[Header ("Adjustable Variables")]
 	[Range (0, 10)] public float speed = 0f;
 	private float rotateChar = 12f;
@@ -38,57 +40,93 @@ public class CroakScript : MonoBehaviour {
 	private bool croakBasicCooling;
 
 	[Header ("Croak Miscellaneous Variables")]
-	HealthBarScript healthBarScript; 
+	HealthBarScript healthBarScript;
+	public float coneAngle = 45f;
+	[HideInInspector] public bool croakSlowed = false;
+	[HideInInspector] public float croakSlowedAmount;
+	[HideInInspector] public float croakSlowedLength;
+
 	#endregion
 
-	void Awake () {
+	void Awake ()
+	{
 		S = this;
+		this.gameObject.name = "Croak";
 	}
 
-	void Update () {
+	void Update ()
+	{
 
 		this.transform.position = new Vector3 (transform.position.x, 0, transform.position.z);
 
 		if (Device != null) {
 
-			#region *** CROAK BASIC ATTACK ***
-			if (croakBasicCooling) {
-				croakBasicCD -= Time.deltaTime;
+			#region *** CROAK SLOW DURATION ***
+			if (croakSlowed) {
+				croakSlowedLength -= Time.deltaTime;
 
-				if (croakBasicCD <= 0f) {
-					croakBasicCooling = false;
-					croakBasicCD = croakBasicSpeed;
+				if (croakSlowedLength <= 0f) {
+					croakSlowed = false;
+					canMove = true;
+					croakSlowedAmount = 0f;
+					croakSlowedLength = 0f;
 				}
 			}
-
-			if (Device.RightBumper.IsPressed) {
-				if (croakBasicCooling == false)
-					croakBasic (croakBasicRange);
-				//playerAnim.Play ("Attack V1");
-			}
-			#endregion
-
-			#region *** CROAK MANGLE ***
-			#endregion
-
-			#region *** CROAK FIRE BREATH ***
 			#endregion
 
 			if (canMove) {
+				
+				#region *** CROAK BASIC ATTACK ***
+				if (croakBasicCooling) {
+					croakBasicCD -= Time.deltaTime;
+
+					if (croakBasicCD <= 0f) {
+						croakBasicCooling = false;
+						croakBasicCD = croakBasicSpeed;
+					}
+				}
+
+				if (Device.RightBumper.IsPressed) {
+					if (croakBasicCooling == false)
+						croakBasic (croakBasicRange);
+					//playerAnim.Play ("Attack V1");
+				}
+				#endregion
+
+				#region *** CROAK MANGLE ***
+				#endregion
+
+				#region *** CROAK FIRE BREATH ***
+				#endregion
+
 				// Moving and rotating the character with the left stick
 				CharacterController Controller = GetComponent<CharacterController> ();
 
-				moveDirection = new Vector3 (Device.LeftStickX, 0, Device.LeftStickY);
-				moveDirection = transform.TransformDirection (moveDirection);
-				moveDirection *= speed;
+				if (croakSlowed == false) {
+					moveDirection = new Vector3 (Device.LeftStickX, 0, Device.LeftStickY);
+					moveDirection = transform.TransformDirection (moveDirection);
+					moveDirection *= speed;
 
-				if (moveDirection != Vector3.zero && headDirection == Vector3.zero) {
-					playerBody.transform.rotation = Quaternion.Slerp (
-						playerBody.transform.rotation,
-						Quaternion.LookRotation (moveDirection),
-						Time.deltaTime * rotateChar);
+					if (moveDirection != Vector3.zero && headDirection == Vector3.zero) {
+						playerBody.transform.rotation = Quaternion.Slerp (
+							playerBody.transform.rotation,
+							Quaternion.LookRotation (moveDirection),
+							Time.deltaTime * rotateChar);
+					}
 				}
 
+				if (croakSlowed == true) {
+					moveDirection = new Vector3 (Device.LeftStickX, 0, Device.LeftStickY);
+					moveDirection = transform.TransformDirection (moveDirection);
+					moveDirection *= speed - croakSlowedAmount;
+
+					if (moveDirection != Vector3.zero && headDirection == Vector3.zero) {
+						playerBody.transform.rotation = Quaternion.Slerp (
+							playerBody.transform.rotation,
+							Quaternion.LookRotation (moveDirection),
+							Time.deltaTime * rotateChar);
+					}
+				}
 				// Rotating the character with the right stick
 				headDirection = new Vector3 (Device.RightStick.X, 0, Device.RightStick.Y);
 				if (headDirection != Vector3.zero) {
@@ -112,16 +150,17 @@ public class CroakScript : MonoBehaviour {
 		}
 	}
 
-	public void croakBasic (float croakBasicRange) {
+	public void croakBasic (float croakBasicRange)
+	{
 		croakBasicCooling = true;
-		RaycastHit hit;
-		Debug.DrawRay (basicSpawnPoint.transform.position, basicSpawnPoint.transform.forward * croakBasicRange);
-		if (Physics.Raycast (basicSpawnPoint.transform.position, basicSpawnPoint.transform.forward, out hit, croakBasicRange)) {
-			if (hit.collider.tag == "Player") {
+		Vector3 explosionPos = basicSpawnPoint.transform.position;
+		Collider[] hitColliders = Physics.OverlapSphere (explosionPos, croakBasicRange);
+
+		foreach (Collider hit in hitColliders) {
+			if ((hit.GetComponent<Collider> ().tag == "Player") && (hit.gameObject != playerParent.gameObject) && (Vector3.Angle (basicSpawnPoint.transform.forward, hit.transform.position - explosionPos) <= coneAngle)) {
 				healthBarScript = hit.transform.FindChild ("HealthBarCanvas").GetComponent<HealthBarScript> ();
 				healthBarScript.GetHit (croakBasicDamage);
 			}
 		}
 	}
-
 }

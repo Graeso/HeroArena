@@ -195,6 +195,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1264774492966508
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4816932488599932}
+  m_Layer: 12
+  m_Name: JeremiahCrimsonReach
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1277478788067694
 GameObject:
   m_ObjectHideFlags: 1
@@ -890,6 +905,7 @@ Transform:
   - {fileID: 4246733625827258}
   - {fileID: 4128459266936114}
   - {fileID: 4142794483001590}
+  - {fileID: 4816932488599932}
   m_Father: {fileID: 4619392093062774}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1079,6 +1095,19 @@ Transform:
   m_Father: {fileID: 4049577981497326}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4816932488599932
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1264774492966508}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.831}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4517277027468624}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4859386186532850
 Transform:
   m_ObjectHideFlags: 1
@@ -1137,7 +1166,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &23569582624193854
 MeshRenderer:
@@ -1169,7 +1197,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &33526495726666082
 MeshFilter:
@@ -1261,15 +1288,29 @@ MonoBehaviour:
   playerBody: {fileID: 1824064577570428}
   playerParent: {fileID: 1411844930125488}
   basicSpawnPoint: {fileID: 1235014402673832}
+  crimsonReachSpawnPoint: {fileID: 1264774492966508}
   canMove: 1
   maxHealth: 225
   maxStamina: 100
   jeremiahBasicDamage: 10
-  jeremiahBasicCD: 0.25
+  jeremiahBasicCD: 0.3
   jeremiahBasicRange: 1
   jeremiahBasicSpeed: 0.25
+  jeremiahInnerBloodDamage: 20
+  jeremiahInnerBloodCD: 0.8
+  jeremiahInnerBloodRange: 1
+  jeremiahInnerBloodSpeed: 0.75
   innerBlood: 0
-  coneAngle: 45
+  jeremiahCrimsonReachCD: 10
+  jeremiahCrimsonReachRange: 5
+  jeremiahCrimsonReachSlow: 0
+  jeremiahCrimsonReachSlowLength: 1
+  jeremiahCrimsonReachSpeed: 10
+  slimConeAngle: 45
+  wideConeAngle: 90
+  jeremiahSlowed: 0
+  jeremiahSlowedAmount: 0
+  jeremiahSlowedLength: 0
 --- !u!114 &114517621923165374
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1403,7 +1444,6 @@ SkinnedMeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
   serializedVersion: 2
   m_Quality: 0
@@ -1487,16 +1527,11 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300002, guid: 82aa1cdca3f7065438c940adb852a56a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
 --- !u!222 &222306416310234010
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -1522,7 +1557,7 @@ Canvas:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1859889392812194}
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_RenderMode: 2
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
@@ -1531,7 +1566,6 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0

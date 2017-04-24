@@ -1403,7 +1403,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &23577645369073442
 MeshRenderer:
@@ -1435,7 +1434,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &23718160048985816
 MeshRenderer:
@@ -1467,7 +1465,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &33043526955269648
 MeshFilter:
@@ -1672,10 +1669,22 @@ MonoBehaviour:
   canMove: 1
   maxHealth: 200
   maxStamina: 100
-  sheraBasicDamage: 5
-  sheraBasicCD: 0.1
+  sheraBasicDamage: 3
+  sheraBasicCD: 0.15
   sheraBasicRange: 1
-  sheraBasicSpeed: 0.5
+  sheraBasicSpeed: 0.15
+  sheraDoubleKickDamage: 15
+  sheraDoubleKickSlow: 1
+  sheraDoubleKickSlowLength: 3
+  sheraDoubleKickCD: 6
+  sheraDoubleKickRange: 1
+  sheraDoubleKickSpeed: 6
+  sheraDancingLeapDamage: 25
+  sheraDancingLeapDistance: 2
+  sheraDancingLeapCD: 8
+  sheraDancingLeapRange: 1
+  sheraDancingLeapSpeed: 8
+  coneAngle: 45
 --- !u!137 &137747486918122068
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -1706,7 +1715,6 @@ SkinnedMeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
   serializedVersion: 2
   m_Quality: 0
@@ -1796,16 +1804,11 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300006, guid: 82aa1cdca3f7065438c940adb852a56a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
 --- !u!222 &222112779214859688
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -1831,7 +1834,7 @@ Canvas:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1013675663160428}
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_RenderMode: 2
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
@@ -1840,7 +1843,6 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0

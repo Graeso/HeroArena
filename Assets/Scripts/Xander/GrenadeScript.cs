@@ -34,5 +34,10 @@ public class GrenadeScript : MonoBehaviour {
 			healthBarScript = col.transform.FindChild ("HealthBarCanvas").GetComponent<HealthBarScript> ();
 			healthBarScript.GetHit (XanderScript.S.xanderBasicDamage);
 		}
+		if (col.gameObject.tag == "Obstacle")
+			Destroy (this.gameObject);
+
+		if (col.gameObject.tag == "Ground")
+			Destroy (this.gameObject);
 	}
 }
