@@ -296,6 +296,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1229428880320306
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4397811942367826}
+  m_Layer: 12
+  m_Name: CroakBasicSpawn
+  m_TagString: Weapon
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1231621365791802
 GameObject:
   m_ObjectHideFlags: 1
@@ -703,7 +718,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4642119392155276}
   m_Layer: 12
-  m_Name: CroakBasicSpawn
+  m_Name: CroakFireballSpawn
   m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -979,6 +994,7 @@ GameObject:
   - component: {fileID: 4079997160587446}
   - component: {fileID: 114954073110156468}
   - component: {fileID: 143152076945895274}
+  - component: {fileID: 65311431194117492}
   m_Layer: 14
   m_Name: Croak
   m_TagString: Player
@@ -1076,7 +1092,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1989784214122034}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.23, y: 0, z: -2.86}
+  m_LocalPosition: {x: 30.74, y: 0.12, z: -2.86}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4185562966430244}
@@ -1211,6 +1227,7 @@ Transform:
   - {fileID: 4429571810676780}
   - {fileID: 4383553165159192}
   - {fileID: 4391547946011564}
+  - {fileID: 4397811942367826}
   - {fileID: 4642119392155276}
   m_Father: {fileID: 4079997160587446}
   m_RootOrder: 0
@@ -1407,6 +1424,19 @@ Transform:
   m_Father: {fileID: 4185562966430244}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
+--- !u!4 &4397811942367826
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1229428880320306}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.643, z: -0.021}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4185562966430244}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4411225346472106
 Transform:
   m_ObjectHideFlags: 1
@@ -1612,11 +1642,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1743778254767970}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.479, z: 0.3499999}
+  m_LocalPosition: {x: 0, y: 0.752, z: 0.388}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4185562966430244}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4655523205205150
 Transform:
@@ -1832,6 +1862,18 @@ Transform:
   m_Father: {fileID: 4871883576306706}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &65311431194117492
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1989784214122034}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.1143222, z: 1}
+  m_Center: {x: 0, y: 1.2171612, z: 0.01999998}
 --- !u!111 &111125547068681042
 Animation:
   m_ObjectHideFlags: 1
@@ -2005,18 +2047,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43292ff8f6431b84b8fb438db855c825, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2.5
+  speed: 2
   playerAnim: {fileID: 111125547068681042}
   playerBody: {fileID: 1510212695542038}
   playerParent: {fileID: 1989784214122034}
-  basicSpawnPoint: {fileID: 1743778254767970}
+  basicSpawnPoint: {fileID: 1229428880320306}
   canMove: 1
-  maxHealth: 225
+  maxHealth: 400
   maxStamina: 100
-  croakBasicDamage: 30
-  croakBasicCD: 1
+  croakBasicDamage: 12
+  croakBasicCD: 0.75
   croakBasicRange: 1
-  croakBasicSpeed: 0.5
+  croakBasicSpeed: 1
+  croakMangleDamage: 12
+  croakMangleCD: 4
+  croakMangleRange: 2
+  croakMangleSlow: 0.5
+  croakMangleSlowLength: 2
+  croakMangleSpeed: 4
+  croakFireballDamage: 20
+  croakFireballCD: 5
+  croakFireballSpeed: 5
+  coneAngle: 60
+  croakSlowed: 0
+  croakSlowedAmount: 0
+  croakSlowedLength: 0
 --- !u!137 &137568326267336374
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -2030,7 +2085,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 0da32232b311d3147b5439d8f9f21b1c, type: 2}
+  - {fileID: 2100000, guid: a9af886f802fb7647b97a3384a49b543, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

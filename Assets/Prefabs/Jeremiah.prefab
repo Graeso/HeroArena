@@ -312,6 +312,7 @@ GameObject:
   - component: {fileID: 4619392093062774}
   - component: {fileID: 114105460199230712}
   - component: {fileID: 143551857111803632}
+  - component: {fileID: 65391343216072950}
   m_Layer: 12
   m_Name: Jeremiah
   m_TagString: Player
@@ -974,7 +975,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1411844930125488}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.44, y: -0.014181495, z: -1.43}
+  m_LocalPosition: {x: 22.07, y: 0.12, z: -1.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4517277027468624}
@@ -1166,6 +1167,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &23569582624193854
 MeshRenderer:
@@ -1197,6 +1199,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &33526495726666082
 MeshFilter:
@@ -1212,6 +1215,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1825389645476928}
   m_Mesh: {fileID: 4300004, guid: 5bf5ff04f4147a94cb3979e17ac65d6b, type: 3}
+--- !u!65 &65391343216072950
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1411844930125488}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5468912, y: 2.0983708, z: 0.5747675}
+  m_Center: {x: 0.010810852, y: 1.2091855, z: 0.028249681}
 --- !u!111 &111194132457643126
 Animation:
   m_ObjectHideFlags: 1
@@ -1283,28 +1298,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ca3043fdf92ec04db6383874818f8c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2.5
+  speed: 2.15
   playerAnim: {fileID: 111194132457643126}
   playerBody: {fileID: 1824064577570428}
   playerParent: {fileID: 1411844930125488}
   basicSpawnPoint: {fileID: 1235014402673832}
   crimsonReachSpawnPoint: {fileID: 1264774492966508}
   canMove: 1
-  maxHealth: 225
+  maxHealth: 350
   maxStamina: 100
-  jeremiahBasicDamage: 10
-  jeremiahBasicCD: 0.3
+  jeremiahBasicDamage: 5
+  jeremiahBasicCD: 0.4
   jeremiahBasicRange: 1
-  jeremiahBasicSpeed: 0.25
-  jeremiahInnerBloodDamage: 20
-  jeremiahInnerBloodCD: 0.8
+  jeremiahBasicSpeed: 0.5
+  jeremiahInnerBloodDamage: 10
+  jeremiahInnerBloodCD: 0.65
   jeremiahInnerBloodRange: 1
-  jeremiahInnerBloodSpeed: 0.75
+  jeremiahInnerBloodSpeed: 1
   innerBlood: 0
   jeremiahCrimsonReachCD: 10
   jeremiahCrimsonReachRange: 5
   jeremiahCrimsonReachSlow: 0
-  jeremiahCrimsonReachSlowLength: 1
+  jeremiahCrimsonReachSlowLength: 0.5
   jeremiahCrimsonReachSpeed: 10
   slimConeAngle: 45
   wideConeAngle: 90
@@ -1444,6 +1459,7 @@ SkinnedMeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   serializedVersion: 2
   m_Quality: 0
@@ -1527,11 +1543,16 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300002, guid: 82aa1cdca3f7065438c940adb852a56a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
 --- !u!222 &222306416310234010
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -1557,7 +1578,7 @@ Canvas:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1859889392812194}
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_RenderMode: 2
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
@@ -1566,6 +1587,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0

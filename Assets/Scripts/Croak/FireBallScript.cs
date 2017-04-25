@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GrenadeScript : MonoBehaviour {
+public class FireBallScript : MonoBehaviour {
 
 	HealthBarScript healthBarScript; 
-	private float lifeTime = 3f;
+	private float lifeTime = 2f;
 	private Rigidbody rb;
 	[Range (0, 100)] public float thrust = 50f;
 
@@ -30,7 +30,7 @@ public class GrenadeScript : MonoBehaviour {
 	void Explosion (Collision col) {
 		if (col.gameObject.tag == "Player") {
 			healthBarScript = col.transform.FindChild ("HealthBarCanvas").GetComponent<HealthBarScript> ();
-			healthBarScript.GetHit (XanderScript.S.xanderBasicDamage);
+			healthBarScript.GetHit (CroakScript.S.croakFireballDamage);
 		}
 		if (col.gameObject.tag == "Obstacle")
 			Destroy (this.gameObject);

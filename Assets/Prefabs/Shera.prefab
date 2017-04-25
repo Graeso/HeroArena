@@ -240,6 +240,7 @@ GameObject:
   - component: {fileID: 4740288721770506}
   - component: {fileID: 114980926721877338}
   - component: {fileID: 143571645436395700}
+  - component: {fileID: 65686186756733946}
   m_Layer: 10
   m_Name: Shera
   m_TagString: Player
@@ -856,7 +857,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1382713735392138}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.334, z: 0.131}
+  m_LocalPosition: {x: 0, y: 0.334, z: 0.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4364115472321928}
@@ -1212,8 +1213,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1345801955983058}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.61, y: -0.081, z: 1.775}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 27.9, y: 0.12, z: 1.775}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 4364115472321928}
   - {fileID: 224698515296130904}
@@ -1403,6 +1404,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &23577645369073442
 MeshRenderer:
@@ -1434,6 +1436,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &23718160048985816
 MeshRenderer:
@@ -1465,6 +1468,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &33043526955269648
 MeshFilter:
@@ -1487,6 +1491,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1329307817500616}
   m_Mesh: {fileID: 4300006, guid: 2f73e5c37e3664f46a4d51d92ee0a039, type: 3}
+--- !u!65 &65686186756733946
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1345801955983058}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 1.6717517, z: 0.4895501}
+  m_Center: {x: 0, y: 0.6958761, z: 0.0102825165}
 --- !u!111 &111663278331753900
 Animation:
   m_ObjectHideFlags: 1
@@ -1661,30 +1677,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3df4d36229130674b9a652ef787e825d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2.5
+  speed: 2.75
   playerAnim: {fileID: 111663278331753900}
   playerBody: {fileID: 1454430709254322}
   playerParent: {fileID: 1345801955983058}
   basicSpawnPoint: {fileID: 1382713735392138}
   canMove: 1
-  maxHealth: 200
+  maxHealth: 300
   maxStamina: 100
   sheraBasicDamage: 3
-  sheraBasicCD: 0.15
+  sheraBasicCD: 0.2
   sheraBasicRange: 1
   sheraBasicSpeed: 0.15
-  sheraDoubleKickDamage: 15
+  sheraDoubleKickDamage: 12
   sheraDoubleKickSlow: 1
-  sheraDoubleKickSlowLength: 3
+  sheraDoubleKickSlowLength: 1.5
   sheraDoubleKickCD: 6
   sheraDoubleKickRange: 1
   sheraDoubleKickSpeed: 6
-  sheraDancingLeapDamage: 25
+  sheraDancingLeapDamage: 10
   sheraDancingLeapDistance: 2
   sheraDancingLeapCD: 8
   sheraDancingLeapRange: 1
   sheraDancingLeapSpeed: 8
   coneAngle: 45
+  sheraSlowed: 0
+  sheraSlowedAmount: 0
+  sheraSlowedLength: 0
 --- !u!137 &137747486918122068
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -1715,6 +1734,7 @@ SkinnedMeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   serializedVersion: 2
   m_Quality: 0
@@ -1773,7 +1793,7 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.01
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.42, z: 0.02}
+  m_Center: {x: 0, y: 0.36, z: 0.02}
 --- !u!212 &212267703867713430
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -1804,11 +1824,16 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300006, guid: 82aa1cdca3f7065438c940adb852a56a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
 --- !u!222 &222112779214859688
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -1834,7 +1859,7 @@ Canvas:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1013675663160428}
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_RenderMode: 2
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
@@ -1843,6 +1868,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0

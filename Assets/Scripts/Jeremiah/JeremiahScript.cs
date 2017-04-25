@@ -11,11 +11,11 @@ public class JeremiahScript : MonoBehaviour
 
 	#region Variables
 
-	[Header ("Adjustable Variables")]
+	[Header ("----- Adjustable Variables -----")]
 	[Range (0, 10)] public float speed = 0f;
 	private float rotateChar = 12f;
 
-	[Header ("Settable Variables")]
+	[Header ("----- Settable Variables -----")]
 	public Animation playerAnim;
 	public GameObject playerBody;
 	public GameObject playerParent;
@@ -27,20 +27,20 @@ public class JeremiahScript : MonoBehaviour
 	private Vector3 moveDirection = Vector3.zero;
 	private Vector3 headDirection = Vector3.zero;
 
-	[Header ("Jeremiah Statistics")]
+	[Header ("----- Jeremiah Statistics -----")]
 	public float maxHealth;
 	public float maxStamina;
 	private float curHealth;
 	private float curStamina;
 
-	[Header ("Jeremiah Basic Attack Variables")]
+	[Header ("----- Jeremiah Basic Attack Variables -----")]
 	[Range (0, 100)] public float jeremiahBasicDamage;
 	[Range (0, 10)] public float jeremiahBasicCD;
 	[Range (0, 1)] public float jeremiahBasicRange;
 	public float jeremiahBasicSpeed;
 	private bool jeremiahBasicCooling;
 
-	[Header ("Jeremiah Inner Blood Variables")]
+	[Header ("----- Jeremiah Inner Blood Variables -----")]
 	[Range (0, 100)] public float jeremiahInnerBloodDamage;
 	[Range (0, 10)] public float jeremiahInnerBloodCD;
 	[Range (0, 1)] public float jeremiahInnerBloodRange;
@@ -48,7 +48,7 @@ public class JeremiahScript : MonoBehaviour
 	private bool jeremiahInnerBloodCooling;
 	public bool innerBlood = false;
 
-	[Header ("Jeremiah Crimson Reach Variables")]
+	[Header ("----- Jeremiah Crimson Reach Variables -----")]
 	[Range (0, 10)] public float jeremiahCrimsonReachCD;
 	[Range (0, 10)] public float jeremiahCrimsonReachRange;
 	[Range (0, 1)] public float jeremiahCrimsonReachSlow;
@@ -56,7 +56,7 @@ public class JeremiahScript : MonoBehaviour
 	public float jeremiahCrimsonReachSpeed;
 	private bool jeremiahCrimsonReachCooling;
 
-	[Header ("Jeremiah Miscellaneous Variables")]
+	[Header ("----- Jeremiah Miscellaneous Variables -----")]
 	public float slimConeAngle;
 	public float wideConeAngle;
 	HealthBarScript healthBarScript;

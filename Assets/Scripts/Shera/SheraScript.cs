@@ -11,11 +11,11 @@ public class SheraScript : MonoBehaviour
 
 	#region Variables
 
-	[Header ("Adjustable Variables")]
+	[Header ("----- Adjustable Variables -----")]
 	[Range (0, 10)] public float speed = 0f;
 	private float rotateChar = 12f;
 
-	[Header ("Settable Variables")]
+	[Header ("----- Settable Variables -----")]
 	public Animation playerAnim;
 	public GameObject playerBody;
 	public GameObject playerParent;
@@ -26,20 +26,20 @@ public class SheraScript : MonoBehaviour
 	private Vector3 moveDirection = Vector3.zero;
 	private Vector3 headDirection = Vector3.zero;
 
-	[Header ("Shera Statistics")]
+	[Header ("----- Shera Statistics -----")]
 	public float maxHealth;
 	public float maxStamina;
 	private float curHealth;
 	private float curStamina;
 
-	[Header ("Shera Basic Attack Variables")]
+	[Header ("----- Shera Basic Attack Variables -----")]
 	[Range (0, 100)] public float sheraBasicDamage;
 	[Range (0, 10)] public float sheraBasicCD;
 	[Range (0, 1)] public float sheraBasicRange;
 	public float sheraBasicSpeed;
 	private bool sheraBasicCooling;
 
-	[Header ("Shera Double Kick Variables")]
+	[Header ("----- Shera Double Kick Variables -----")]
 	[Range (0, 100)] public float sheraDoubleKickDamage;
 	[Range (0, 1)] public float sheraDoubleKickSlow;
 	[Range (0, 5)] public float sheraDoubleKickSlowLength;
@@ -48,7 +48,7 @@ public class SheraScript : MonoBehaviour
 	public float sheraDoubleKickSpeed;
 	private bool sheraDoubleKickCooling;
 
-	[Header ("Shera Dancing Leap Variables")]
+	[Header ("----- Shera Dancing Leap Variables -----")]
 	[Range (0, 100)] public float sheraDancingLeapDamage;
 	[Range (0, 10)] public float sheraDancingLeapDistance;
 	[Range (0, 10)] public float sheraDancingLeapCD;
@@ -56,7 +56,7 @@ public class SheraScript : MonoBehaviour
 	public float sheraDancingLeapSpeed;
 	private bool sheraDancingLeapCooling;
 
-	[Header ("Shera Miscellaneous Variables")]
+	[Header ("----- Shera Miscellaneous Variables -----")]
 	HealthBarScript healthBarScript;
 	public float coneAngle = 45f;
 	[HideInInspector] public bool sheraSlowed = false;

@@ -11,11 +11,11 @@ public class CroakScript : MonoBehaviour
 
 	#region Variables
 
-	[Header ("Adjustable Variables")]
+	[Header ("----- Adjustable Variables -----")]
 	[Range (0, 10)] public float speed = 0f;
 	private float rotateChar = 12f;
 
-	[Header ("Settable Variables")]
+	[Header ("----- Settable Variables -----")]
 	public Animation playerAnim;
 	public GameObject playerBody;
 	public GameObject playerParent;
@@ -26,20 +26,35 @@ public class CroakScript : MonoBehaviour
 	private Vector3 moveDirection = Vector3.zero;
 	private Vector3 headDirection = Vector3.zero;
 
-	[Header ("Croak Statistics")]
+	[Header ("----- Croak Statistics -----")]
 	public float maxHealth;
 	public float maxStamina;
 	private float curHealth;
 	private float curStamina;
 
-	[Header ("Croak Basic Attack Variables")]
+	[Header ("----- Croak Basic Attack Variables -----")]
 	[Range (0, 100)] public float croakBasicDamage;
 	[Range (0, 10)] public float croakBasicCD;
 	[Range (0, 1)] public float croakBasicRange;
 	public float croakBasicSpeed;
 	private bool croakBasicCooling;
 
-	[Header ("Croak Miscellaneous Variables")]
+	[Header ("----- Croak Mangle Variables -----")]
+	[Range (0, 100)] public float croakMangleDamage;
+	[Range (0, 10)] public float croakMangleCD;
+	[Range (0, 10)] public float croakMangleRange;
+	[Range (0, 1)] public float croakMangleSlow;
+	[Range (0, 5)] public float croakMangleSlowLength;
+	public float croakMangleSpeed;
+	private bool croakMangleCooling;
+
+	[Header ("----- Croak Fireball Variables -----")]
+	[Range (0, 100)] public float croakFireballDamage;
+	[Range (0, 10)] public float croakFireballCD;
+	public float croakFireballSpeed;
+	private bool croakFireballCooling;
+
+	[Header ("----- Croak Miscellaneous Variables -----")]
 	HealthBarScript healthBarScript;
 	public float coneAngle = 45f;
 	[HideInInspector] public bool croakSlowed = false;
@@ -89,14 +104,40 @@ public class CroakScript : MonoBehaviour
 				if (Device.RightBumper.IsPressed) {
 					if (croakBasicCooling == false)
 						croakBasic (croakBasicRange);
-					//playerAnim.Play ("Attack V1");
 				}
 				#endregion
 
 				#region *** CROAK MANGLE ***
+				if (croakMangleCooling) {
+					croakMangleCD -= Time.deltaTime;
+
+					if (croakMangleCD <= 0f) {
+						croakMangleCooling = false;
+						croakMangleCD = croakMangleSpeed;
+					}
+				}
+
+				if ((Device.Action1.WasPressed)) {
+					if (croakMangleCooling == false) {
+						croakMangle (croakMangleRange);
+					}
+				}
 				#endregion
 
 				#region *** CROAK FIRE BREATH ***
+				if (croakFireballCooling) {
+					croakFireballCD -= Time.deltaTime;
+
+					if (croakFireballCD <= 0f) {
+						croakFireballCooling = false;
+						croakFireballCD = croakFireballSpeed;
+					}
+				}
+
+				if (Device.Action2.WasPressed) {
+					if (croakFireballCooling == false)
+						croakFireball ();
+				}
 				#endregion
 
 				// Moving and rotating the character with the left stick
@@ -162,5 +203,47 @@ public class CroakScript : MonoBehaviour
 				healthBarScript.GetHit (croakBasicDamage);
 			}
 		}
+	}
+
+	public void croakMangle (float croakMangleRange)
+	{
+		croakMangleCooling = true;
+		Vector3 explosionPos = basicSpawnPoint.transform.position;
+		Collider[] hitColliders = Physics.OverlapSphere (explosionPos, croakMangleRange);
+
+		foreach (Collider hit in hitColliders) {
+			if ((hit.GetComponent<Collider> ().tag == "Player") && (hit.gameObject != playerParent.gameObject)) {
+				healthBarScript = hit.transform.FindChild ("HealthBarCanvas").GetComponent<HealthBarScript> ();
+				healthBarScript.GetHit (croakMangleDamage);
+				if (hit.name == "Xander") {
+					hit.transform.GetComponent<XanderScript> ().xanderSlowed = true;
+					hit.transform.GetComponent<XanderScript> ().xanderSlowedAmount += croakMangleSlow;
+					hit.transform.GetComponent<XanderScript> ().xanderSlowedLength += croakMangleSlowLength;
+				}
+				if (hit.name == "Shera") {
+					hit.transform.GetComponent<SheraScript> ().sheraSlowed = true;
+					hit.transform.GetComponent<SheraScript> ().sheraSlowedAmount += croakMangleSlow;
+					hit.transform.GetComponent<SheraScript> ().sheraSlowedLength += croakMangleSlowLength;
+				}
+				if (hit.name == "Croak") {
+					hit.transform.GetComponent<CroakScript> ().croakSlowed = true;
+					hit.transform.GetComponent<CroakScript> ().croakSlowedAmount += croakMangleSlow;
+					hit.transform.GetComponent<CroakScript> ().croakSlowedLength += croakMangleSlowLength;
+				}
+				if (hit.name == "Jeremiah") {
+					hit.transform.GetComponent<JeremiahScript> ().jeremiahSlowed = true;
+					hit.transform.GetComponent<JeremiahScript> ().jeremiahSlowedAmount += croakMangleSlow;
+					hit.transform.GetComponent<JeremiahScript> ().jeremiahSlowedLength += croakMangleSlowLength;
+				}
+			}
+		}
+	}
+
+	public void croakFireball ()
+	{
+		croakFireballCooling = true;
+		GameObject creation;
+		creation = Instantiate (Resources.Load ("croakFireball"), basicSpawnPoint.transform.position, basicSpawnPoint.transform.rotation) as GameObject;
+		creation.transform.eulerAngles = new Vector3 (creation.transform.eulerAngles.x, creation.transform.eulerAngles.y - 2, creation.transform.eulerAngles.x);
 	}
 }

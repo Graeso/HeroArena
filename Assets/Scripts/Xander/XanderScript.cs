@@ -11,11 +11,11 @@ public class XanderScript : MonoBehaviour
 
 	#region Variables
 
-	[Header ("Adjustable Variables")]
+	[Header ("----- Adjustable Variables -----")]
 	[Range (0, 10)] public float speed = 0f;
 	private float rotateChar = 12f;
 
-	[Header ("Settable Variables")]
+	[Header ("----- Settable Variables -----")]
 	public Animation playerAnim;
 	public GameObject playerBody;
 	public GameObject playerParent;
@@ -25,31 +25,31 @@ public class XanderScript : MonoBehaviour
 	private Vector3 moveDirection = Vector3.zero;
 	private Vector3 headDirection = Vector3.zero;
 
-	[Header ("Xander Statistics")]
+	[Header ("----- Xander Statistics -----")]
 	public float maxHealth;
 	public float maxStamina;
 	private float curHealth;
 	private float curStamina;
 
-	[Header ("Xander Basic Attack Variables")]
+	[Header ("----- Xander Basic Attack Variables -----")]
 	[Range (0, 100)] public float xanderBasicDamage;
 	[Range (0, 10)] public float xanderBasicCD;
 	public float xanderBasicSpeed = .5f;
 	private bool basicCooling;
 
-	[Header ("Xander Mine Variables")]
+	[Header ("----- Xander Mine Variables -----")]
 	[Range (0, 100)] public float xanderMineDamage;
 	[Range (0, 10)] public float xanderMineCD;
 	public float xanderMineSpeed;
 	private bool mineCooling;
 
-	[Header ("Xander Dig Variables")]
+	[Header ("----- Xander Dig Variables -----")]
 	[Range (0, 10)] public float xanderDigDistance;
 	[Range (0, 10)] public float xanderDigCD;
 	public float xanderDigSpeed;
 	private bool digCooling;
 
-	[Header ("Xander Various")]
+	[Header ("----- Xander Various -----")]
 	public GameObject basicSpawnPoint;
 	public GameObject mineSpawnPoint;
 	[HideInInspector] public bool xanderSlowed = false;
@@ -115,7 +115,7 @@ public class XanderScript : MonoBehaviour
 					}
 				}
 
-				if (Device.DPadDown.IsPressed) {
+				if (Device.Action1.WasPressed) {
 					if (mineCooling == false)
 						xanderMine (playerBody);
 				}
@@ -131,7 +131,7 @@ public class XanderScript : MonoBehaviour
 					}
 				}
 
-				if (Device.DPadUp.WasPressed) {
+				if (Device.Action2.WasPressed) {
 					if (digCooling == false) {
 						this.transform.position	+= playerBody.transform.forward * xanderDigDistance;
 						digCooling = true;
