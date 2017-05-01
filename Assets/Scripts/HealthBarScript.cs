@@ -20,11 +20,11 @@ public class HealthBarScript : MonoBehaviour {
 	void Start () {
 		S = this;
 		thisParent = this.transform.root.gameObject;
-		if (thisParent.name == "Xander") {
+		if (thisParent.name == "Xander(Clone)") {
 			xanderScript = thisParent.GetComponent<XanderScript> ();
 			maxHealth = xanderScript.maxHealth;
 		}
-		else if (thisParent.name == "Shera") {
+		else if (thisParent.name == "Shera(Clone)") {
 			sheraScript = thisParent.GetComponent<SheraScript> ();
 			maxHealth = sheraScript.maxHealth;
 		} else {

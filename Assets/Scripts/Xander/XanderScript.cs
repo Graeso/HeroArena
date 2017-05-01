@@ -3,100 +3,169 @@ using System.Collections.Generic;
 using UnityEngine;
 using InControl;
 
-public class XanderScript : MonoBehaviour {
+public class XanderScript : MonoBehaviour
+{
 	public static XanderScript S;
 
 	public InputDevice Device { get; set; }
 
 	#region Variables
-	[Header ("Adjustable Variables")]
+
+	[Header ("----- Adjustable Variables -----")]
 	[Range (0, 10)] public float speed = 0f;
 	private float rotateChar = 12f;
 
-	[Header ("Settable Variables")]
+	[Header ("----- Settable Variables -----")]
 	public Animation playerAnim;
 	public GameObject playerBody;
 	public GameObject playerParent;
-	[HideInInspector]
-	public bool canMove = true;
+	[HideInInspector] public bool canMove = true;
 
 	// Private Static Variables
 	private Vector3 moveDirection = Vector3.zero;
 	private Vector3 headDirection = Vector3.zero;
 
-	[Header ("Xander Statistics")]
+	[Header ("----- Xander Statistics -----")]
 	public float maxHealth;
 	public float maxStamina;
 	private float curHealth;
 	private float curStamina;
 
-	[Header ("Xander Basic Attack Variables")]
+	[Header ("----- Xander Basic Attack Variables -----")]
 	[Range (0, 100)] public float xanderBasicDamage;
 	[Range (0, 10)] public float xanderBasicCD;
 	public float xanderBasicSpeed = .5f;
 	private bool basicCooling;
 
-	[Header ("Xander Mine Variables")]
+	[Header ("----- Xander Mine Variables -----")]
 	[Range (0, 100)] public float xanderMineDamage;
 	[Range (0, 10)] public float xanderMineCD;
 	public float xanderMineSpeed;
 	private bool mineCooling;
 
-	[Header ("Xander Ultimate Variables")]
-	[Range (0, 250)] public float xanderUltDamage;
-	[Range (0, 120)] public float xanderUltCD;
-	public float xanderUltSpeed;
-	private bool ultCooling;
-
-	[Header ("Xander Dig Variables")]
-	[Range (0, 100)] public float xanderDigDistance;
+	[Header ("----- Xander Dig Variables -----")]
+	[Range (0, 10)] public float xanderDigDistance;
 	[Range (0, 10)] public float xanderDigCD;
 	public float xanderDigSpeed;
 	private bool digCooling;
 
-	[Header ("Xander Various")]
+	[Header ("----- Xander Various -----")]
 	public GameObject basicSpawnPoint;
+	public GameObject mineSpawnPoint;
+	[HideInInspector] public bool xanderSlowed = false;
+	[HideInInspector] public float xanderSlowedAmount;
+	[HideInInspector] public float xanderSlowedLength;
+
 	#endregion
 
-	void Awake () {
+	void Awake ()
+	{
 		S = this;
+		this.gameObject.name = "Xander";
 	}
 
-	void Start () {
+	void Start ()
+	{
 	}
 
-	void Update () {
+	void Update ()
+	{
+
+		this.transform.position = new Vector3 (transform.position.x, 0, transform.position.z);
 
 		if (Device != null) {
-			if (basicCooling) {
-				xanderBasicCD -= Time.deltaTime;
 
-				if (xanderBasicCD <= 0f) {
-					basicCooling = false;
-					xanderBasicCD = xanderBasicSpeed;
+			#region *** XANDER SLOW DURATION ***
+			if (xanderSlowed) {
+				xanderSlowedLength -= Time.deltaTime;
+
+				if (xanderSlowedLength <= 0f) {
+					xanderSlowed = false;
+					canMove = true;
+					xanderSlowedAmount = 0f;
+					xanderSlowedLength = 0f;
 				}
 			}
-
-			if (Device.RightBumper.IsPressed) {
-				if (basicCooling == false)
-					xanderBasic (playerBody);
-					//playerAnim.Play ("Attack");
-			}
+			#endregion
 
 			if (canMove) {
+				#region *** XANDER BASIC ATTACK ***
+				if (basicCooling) {
+					xanderBasicCD -= Time.deltaTime;
+
+					if (xanderBasicCD <= 0f) {
+						basicCooling = false;
+						xanderBasicCD = xanderBasicSpeed;
+					}
+				}
+
+				if (Device.RightBumper.IsPressed) {
+					if (basicCooling == false)
+						xanderBasic (playerBody);
+				}
+				#endregion
+
+				#region *** XANDER MINE ATTACK ***
+				if (mineCooling) {
+					xanderMineCD -= Time.deltaTime;
+
+					if (xanderMineCD <= 0f) {
+						mineCooling = false;
+						xanderMineCD = xanderMineSpeed;
+					}
+				}
+
+				if (Device.Action1.WasPressed) {
+					if (mineCooling == false)
+						xanderMine (playerBody);
+				}
+				#endregion
+
+				#region *** XANDER DIG ABILITY ***
+				if (digCooling) {
+					xanderDigCD -= Time.deltaTime;
+
+					if (xanderDigCD <= 0f) {
+						digCooling = false;
+						xanderDigCD = xanderDigSpeed;
+					}
+				}
+
+				if (Device.Action2.WasPressed) {
+					if (digCooling == false) {
+						this.transform.position	+= playerBody.transform.forward * xanderDigDistance;
+						digCooling = true;
+					}
+				}
+				#endregion
+
 				// Moving and rotating the character with the left stick
-				//Device = InputManager.ActiveDevice;
 				CharacterController Controller = GetComponent<CharacterController> ();
 
-				moveDirection = new Vector3 (Device.LeftStickX, 0, Device.LeftStickY);
-				moveDirection = transform.TransformDirection (moveDirection);
-				moveDirection *= speed;
+				if (xanderSlowed == false) {
+					moveDirection = new Vector3 (Device.LeftStickX, 0, Device.LeftStickY);
+					moveDirection = transform.TransformDirection (moveDirection);
+					moveDirection *= speed;
 
-				if (moveDirection != Vector3.zero && headDirection == Vector3.zero) {
-					playerBody.transform.rotation = Quaternion.Slerp (
-						playerBody.transform.rotation,
-						Quaternion.LookRotation (moveDirection),
-						Time.deltaTime * rotateChar);
+					if (moveDirection != Vector3.zero && headDirection == Vector3.zero) {
+						playerBody.transform.rotation = Quaternion.Slerp (
+							playerBody.transform.rotation,
+							Quaternion.LookRotation (moveDirection),
+							Time.deltaTime * rotateChar);
+					}
+				}
+
+				if (xanderSlowed == true) {
+					moveDirection = new Vector3 (Device.LeftStickX, 0, Device.LeftStickY);
+					moveDirection = transform.TransformDirection (moveDirection);
+					moveDirection *= speed - xanderSlowedAmount;
+
+					if (moveDirection != Vector3.zero && headDirection == Vector3.zero) {
+						playerBody.transform.rotation = Quaternion.Slerp (
+							playerBody.transform.rotation,
+							Quaternion.LookRotation (moveDirection),
+							Time.deltaTime * rotateChar);
+					}
 				}
 
 				// Rotating the character with the right stick
@@ -122,7 +191,8 @@ public class XanderScript : MonoBehaviour {
 		}
 	}
 
-	public void xanderBasic (GameObject thisPlayer) {
+	public void xanderBasic (GameObject thisPlayer)
+	{
 		basicCooling = true;
 		GameObject creation;
 		creation = Instantiate (Resources.Load ("XanderGrenade"), basicSpawnPoint.transform.position, basicSpawnPoint.transform.rotation) as GameObject;
@@ -133,15 +203,12 @@ public class XanderScript : MonoBehaviour {
 		creation.transform.eulerAngles = new Vector3 (creation.transform.eulerAngles.x, creation.transform.eulerAngles.y + 2, creation.transform.eulerAngles.x);
 	}
 
-	public void xanderMine (float mineDamage, float mineCD, float mineSpeed) {
-		
-	}
-
-	public void xanderUlt (float ultDamage, float ultCD, float ultSpeed) {
-		
-	}
-
-	public void xanderDig (float digDistance, float digCD, float digSpeed) {
-		
+	public void xanderMine (GameObject thisPlayer)
+	{
+		mineCooling = true;
+		canMove = false;
+		GameObject creation;
+		creation = Instantiate (Resources.Load ("XanderMine"), mineSpawnPoint.transform.position, mineSpawnPoint.transform.rotation) as GameObject;
+		canMove = true;
 	}
 }

@@ -5,11 +5,9 @@ using UnityEngine;
 public class GrenadeScript : MonoBehaviour {
 
 	HealthBarScript healthBarScript; 
-	private float lifeTime = 5f;
+	private float lifeTime = 3f;
 	private Rigidbody rb;
 	[Range (0, 100)] public float thrust = 50f;
-	public GameObject originalXander;
-	public GameObject teammate;
 
 	void Start () {
 		rb = GetComponent<Rigidbody> ();
@@ -25,23 +23,19 @@ public class GrenadeScript : MonoBehaviour {
 	}
 
 	void OnCollisionEnter (Collision col) {
-		Explosion (Vector3.zero, 10, col);
+		Explosion (col);
 		Destroy (this.gameObject);
 	}
 
-	void Explosion (Vector3 center, float radius, Collision col) {
-		Collider[] hitColliders = Physics.OverlapSphere (center, radius);
-		int i = 0;
-		while (i < hitColliders.Length) {
-			if (col.gameObject.tag == "Player") {
-				healthBarScript = col.transform.FindChild ("HealthBarCanvas").GetComponent<HealthBarScript> ();
-				healthBarScript.GetHit (15f);
-			}
-			i++;
+	void Explosion (Collision col) {
+		if (col.gameObject.tag == "Player") {
+			healthBarScript = col.transform.FindChild ("HealthBarCanvas").GetComponent<HealthBarScript> ();
+			healthBarScript.GetHit (XanderScript.S.xanderBasicDamage);
 		}
-	}
+		if (col.gameObject.tag == "Obstacle")
+			Destroy (this.gameObject);
 
-	void AssignXander () {
-		
+		if (col.gameObject.tag == "Ground")
+			Destroy (this.gameObject);
 	}
 }
